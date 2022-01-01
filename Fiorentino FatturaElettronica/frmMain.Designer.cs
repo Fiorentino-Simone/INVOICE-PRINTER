@@ -234,8 +234,6 @@
             this.label75 = new System.Windows.Forms.Label();
             this.txtIndirizzoOrgCessionario = new System.Windows.Forms.TextBox();
             this.label76 = new System.Windows.Forms.Label();
-            this.tbControlMain = new System.Windows.Forms.TabControl();
-            this.tbBody = new System.Windows.Forms.TabPage();
             this.tbTerzoIntermediario = new System.Windows.Forms.TabPage();
             this.gb1_5_1 = new System.Windows.Forms.GroupBox();
             this.groupBox62 = new System.Windows.Forms.GroupBox();
@@ -258,6 +256,30 @@
             this.label91 = new System.Windows.Forms.Label();
             this.txtIdPaeseTerzoInterme = new System.Windows.Forms.TextBox();
             this.label92 = new System.Windows.Forms.Label();
+            this.tbControlMain = new System.Windows.Forms.TabControl();
+            this.tbBody = new System.Windows.Forms.TabPage();
+            this.tbRappFiscale = new System.Windows.Forms.TabPage();
+            this.gb1_3 = new System.Windows.Forms.GroupBox();
+            this.groupBox44 = new System.Windows.Forms.GroupBox();
+            this.label52 = new System.Windows.Forms.Label();
+            this.txtCodEORIRappFiscale = new System.Windows.Forms.TextBox();
+            this.label67 = new System.Windows.Forms.Label();
+            this.txtTitoloRappFiscale = new System.Windows.Forms.TextBox();
+            this.label68 = new System.Windows.Forms.Label();
+            this.txtCognomeRappFiscale = new System.Windows.Forms.TextBox();
+            this.label69 = new System.Windows.Forms.Label();
+            this.txtNomeRappFiscale = new System.Windows.Forms.TextBox();
+            this.label77 = new System.Windows.Forms.Label();
+            this.txtDenominazioneRappFiscale = new System.Windows.Forms.TextBox();
+            this.groupBox45 = new System.Windows.Forms.GroupBox();
+            this.label78 = new System.Windows.Forms.Label();
+            this.txtCFRappFiscale = new System.Windows.Forms.TextBox();
+            this.groupBox46 = new System.Windows.Forms.GroupBox();
+            this.label79 = new System.Windows.Forms.Label();
+            this.txtIDCodiceRappFiscale = new System.Windows.Forms.TextBox();
+            this.label80 = new System.Windows.Forms.Label();
+            this.txtIDPaeseRappFiscale = new System.Windows.Forms.TextBox();
+            this.label81 = new System.Windows.Forms.Label();
             this.tbHeader.SuspendLayout();
             this.tbControlHeader.SuspendLayout();
             this.tbDatiTrasm.SuspendLayout();
@@ -325,12 +347,17 @@
             this.groupBox52.SuspendLayout();
             this.groupBox53.SuspendLayout();
             this.groupBox54.SuspendLayout();
-            this.tbControlMain.SuspendLayout();
             this.tbTerzoIntermediario.SuspendLayout();
             this.gb1_5_1.SuspendLayout();
             this.groupBox62.SuspendLayout();
             this.groupBox63.SuspendLayout();
             this.groupBox64.SuspendLayout();
+            this.tbControlMain.SuspendLayout();
+            this.tbRappFiscale.SuspendLayout();
+            this.gb1_3.SuspendLayout();
+            this.groupBox44.SuspendLayout();
+            this.groupBox45.SuspendLayout();
+            this.groupBox46.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbHeader
@@ -350,6 +377,7 @@
             this.tbControlHeader.Controls.Add(this.tbDatiTrasm);
             this.tbControlHeader.Controls.Add(this.tbCedentePrestatore1);
             this.tbControlHeader.Controls.Add(this.tbCedentePrestatore2);
+            this.tbControlHeader.Controls.Add(this.tbRappFiscale);
             this.tbControlHeader.Controls.Add(this.tbCessionarioCommittente1);
             this.tbControlHeader.Controls.Add(this.tbCessionarioCommittente2);
             this.tbControlHeader.Controls.Add(this.tbTerzoIntermediario);
@@ -2267,26 +2295,6 @@
             this.label76.TabIndex = 13;
             this.label76.Text = "SCHEDA PER INSERIRE I DATI DEL CESSIONARIO COMMITTENTE: (Parte 2)";
             // 
-            // tbControlMain
-            // 
-            this.tbControlMain.Controls.Add(this.tbHeader);
-            this.tbControlMain.Controls.Add(this.tbBody);
-            this.tbControlMain.Location = new System.Drawing.Point(4, 4);
-            this.tbControlMain.Margin = new System.Windows.Forms.Padding(4);
-            this.tbControlMain.Name = "tbControlMain";
-            this.tbControlMain.SelectedIndex = 0;
-            this.tbControlMain.Size = new System.Drawing.Size(1676, 724);
-            this.tbControlMain.TabIndex = 1;
-            // 
-            // tbBody
-            // 
-            this.tbBody.Location = new System.Drawing.Point(4, 25);
-            this.tbBody.Name = "tbBody";
-            this.tbBody.Size = new System.Drawing.Size(1668, 695);
-            this.tbBody.TabIndex = 1;
-            this.tbBody.Text = "BODY";
-            this.tbBody.UseVisualStyleBackColor = true;
-            // 
             // tbTerzoIntermediario
             // 
             this.tbTerzoIntermediario.Controls.Add(this.gb1_5_1);
@@ -2303,7 +2311,7 @@
             this.gb1_5_1.Controls.Add(this.groupBox62);
             this.gb1_5_1.Controls.Add(this.groupBox63);
             this.gb1_5_1.Controls.Add(this.groupBox64);
-            this.gb1_5_1.Location = new System.Drawing.Point(114, 153);
+            this.gb1_5_1.Location = new System.Drawing.Point(146, 187);
             this.gb1_5_1.Name = "gb1_5_1";
             this.gb1_5_1.Size = new System.Drawing.Size(1229, 238);
             this.gb1_5_1.TabIndex = 8;
@@ -2485,11 +2493,235 @@
             // 
             this.label92.AutoSize = true;
             this.label92.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label92.Location = new System.Drawing.Point(177, 88);
+            this.label92.Location = new System.Drawing.Point(209, 122);
             this.label92.Name = "label92";
             this.label92.Size = new System.Drawing.Size(1113, 35);
             this.label92.TabIndex = 7;
             this.label92.Text = "SCHEDA PER INSERIRE I DATI DEL TERZO INTERMEDIARIO O SOGGETTO EMITTENTE:";
+            // 
+            // tbControlMain
+            // 
+            this.tbControlMain.Controls.Add(this.tbHeader);
+            this.tbControlMain.Controls.Add(this.tbBody);
+            this.tbControlMain.Location = new System.Drawing.Point(4, 4);
+            this.tbControlMain.Margin = new System.Windows.Forms.Padding(4);
+            this.tbControlMain.Name = "tbControlMain";
+            this.tbControlMain.SelectedIndex = 0;
+            this.tbControlMain.Size = new System.Drawing.Size(1676, 724);
+            this.tbControlMain.TabIndex = 1;
+            // 
+            // tbBody
+            // 
+            this.tbBody.Location = new System.Drawing.Point(4, 25);
+            this.tbBody.Name = "tbBody";
+            this.tbBody.Size = new System.Drawing.Size(1668, 695);
+            this.tbBody.TabIndex = 1;
+            this.tbBody.Text = "BODY";
+            this.tbBody.UseVisualStyleBackColor = true;
+            // 
+            // tbRappFiscale
+            // 
+            this.tbRappFiscale.Controls.Add(this.gb1_3);
+            this.tbRappFiscale.Controls.Add(this.label81);
+            this.tbRappFiscale.Location = new System.Drawing.Point(4, 25);
+            this.tbRappFiscale.Name = "tbRappFiscale";
+            this.tbRappFiscale.Size = new System.Drawing.Size(1657, 656);
+            this.tbRappFiscale.TabIndex = 6;
+            this.tbRappFiscale.Text = "RAPPRESENTANTE FISCALE";
+            this.tbRappFiscale.UseVisualStyleBackColor = true;
+            // 
+            // gb1_3
+            // 
+            this.gb1_3.Controls.Add(this.groupBox44);
+            this.gb1_3.Controls.Add(this.groupBox45);
+            this.gb1_3.Controls.Add(this.groupBox46);
+            this.gb1_3.Location = new System.Drawing.Point(131, 163);
+            this.gb1_3.Name = "gb1_3";
+            this.gb1_3.Size = new System.Drawing.Size(1229, 238);
+            this.gb1_3.TabIndex = 10;
+            this.gb1_3.TabStop = false;
+            this.gb1_3.Text = "SCHEDA 1.3.1: DATI ANAGRAFICI";
+            // 
+            // groupBox44
+            // 
+            this.groupBox44.Controls.Add(this.label52);
+            this.groupBox44.Controls.Add(this.txtCodEORIRappFiscale);
+            this.groupBox44.Controls.Add(this.label67);
+            this.groupBox44.Controls.Add(this.txtTitoloRappFiscale);
+            this.groupBox44.Controls.Add(this.label68);
+            this.groupBox44.Controls.Add(this.txtCognomeRappFiscale);
+            this.groupBox44.Controls.Add(this.label69);
+            this.groupBox44.Controls.Add(this.txtNomeRappFiscale);
+            this.groupBox44.Controls.Add(this.label77);
+            this.groupBox44.Controls.Add(this.txtDenominazioneRappFiscale);
+            this.groupBox44.Location = new System.Drawing.Point(819, 21);
+            this.groupBox44.Name = "groupBox44";
+            this.groupBox44.Size = new System.Drawing.Size(383, 201);
+            this.groupBox44.TabIndex = 12;
+            this.groupBox44.TabStop = false;
+            this.groupBox44.Text = "SCHEDA 1.3.1.3. ANAGRAFICA";
+            // 
+            // label52
+            // 
+            this.label52.AutoSize = true;
+            this.label52.Location = new System.Drawing.Point(39, 171);
+            this.label52.Name = "label52";
+            this.label52.Size = new System.Drawing.Size(74, 17);
+            this.label52.TabIndex = 17;
+            this.label52.Text = "CodEORI: ";
+            // 
+            // txtCodEORIRappFiscale
+            // 
+            this.txtCodEORIRappFiscale.Location = new System.Drawing.Point(151, 166);
+            this.txtCodEORIRappFiscale.Name = "txtCodEORIRappFiscale";
+            this.txtCodEORIRappFiscale.Size = new System.Drawing.Size(206, 22);
+            this.txtCodEORIRappFiscale.TabIndex = 18;
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Location = new System.Drawing.Point(39, 137);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(67, 17);
+            this.label67.TabIndex = 15;
+            this.label67.Text = "TITOLO: ";
+            // 
+            // txtTitoloRappFiscale
+            // 
+            this.txtTitoloRappFiscale.Location = new System.Drawing.Point(151, 132);
+            this.txtTitoloRappFiscale.Name = "txtTitoloRappFiscale";
+            this.txtTitoloRappFiscale.Size = new System.Drawing.Size(206, 22);
+            this.txtTitoloRappFiscale.TabIndex = 16;
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Location = new System.Drawing.Point(39, 103);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(88, 17);
+            this.label68.TabIndex = 13;
+            this.label68.Text = "COGNOME: ";
+            // 
+            // txtCognomeRappFiscale
+            // 
+            this.txtCognomeRappFiscale.Location = new System.Drawing.Point(151, 98);
+            this.txtCognomeRappFiscale.Name = "txtCognomeRappFiscale";
+            this.txtCognomeRappFiscale.Size = new System.Drawing.Size(206, 22);
+            this.txtCognomeRappFiscale.TabIndex = 14;
+            // 
+            // label69
+            // 
+            this.label69.AutoSize = true;
+            this.label69.Location = new System.Drawing.Point(50, 69);
+            this.label69.Name = "label69";
+            this.label69.Size = new System.Drawing.Size(57, 17);
+            this.label69.TabIndex = 11;
+            this.label69.Text = "NOME: ";
+            // 
+            // txtNomeRappFiscale
+            // 
+            this.txtNomeRappFiscale.Location = new System.Drawing.Point(151, 64);
+            this.txtNomeRappFiscale.Name = "txtNomeRappFiscale";
+            this.txtNomeRappFiscale.Size = new System.Drawing.Size(206, 22);
+            this.txtNomeRappFiscale.TabIndex = 12;
+            // 
+            // label77
+            // 
+            this.label77.AutoSize = true;
+            this.label77.Location = new System.Drawing.Point(18, 35);
+            this.label77.Name = "label77";
+            this.label77.Size = new System.Drawing.Size(127, 17);
+            this.label77.TabIndex = 9;
+            this.label77.Text = "DENOMINAZIONE:";
+            // 
+            // txtDenominazioneRappFiscale
+            // 
+            this.txtDenominazioneRappFiscale.Location = new System.Drawing.Point(151, 30);
+            this.txtDenominazioneRappFiscale.Name = "txtDenominazioneRappFiscale";
+            this.txtDenominazioneRappFiscale.Size = new System.Drawing.Size(206, 22);
+            this.txtDenominazioneRappFiscale.TabIndex = 10;
+            // 
+            // groupBox45
+            // 
+            this.groupBox45.Controls.Add(this.label78);
+            this.groupBox45.Controls.Add(this.txtCFRappFiscale);
+            this.groupBox45.Location = new System.Drawing.Point(411, 56);
+            this.groupBox45.Name = "groupBox45";
+            this.groupBox45.Size = new System.Drawing.Size(383, 71);
+            this.groupBox45.TabIndex = 11;
+            this.groupBox45.TabStop = false;
+            this.groupBox45.Text = "SCHEDA 1.3.1.2. ";
+            // 
+            // label78
+            // 
+            this.label78.AutoSize = true;
+            this.label78.Location = new System.Drawing.Point(18, 33);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(122, 17);
+            this.label78.TabIndex = 9;
+            this.label78.Text = "CODICE FISCALE:";
+            // 
+            // txtCFRappFiscale
+            // 
+            this.txtCFRappFiscale.Location = new System.Drawing.Point(142, 28);
+            this.txtCFRappFiscale.Name = "txtCFRappFiscale";
+            this.txtCFRappFiscale.Size = new System.Drawing.Size(213, 22);
+            this.txtCFRappFiscale.TabIndex = 10;
+            // 
+            // groupBox46
+            // 
+            this.groupBox46.Controls.Add(this.label79);
+            this.groupBox46.Controls.Add(this.txtIDCodiceRappFiscale);
+            this.groupBox46.Controls.Add(this.label80);
+            this.groupBox46.Controls.Add(this.txtIDPaeseRappFiscale);
+            this.groupBox46.Location = new System.Drawing.Point(6, 21);
+            this.groupBox46.Name = "groupBox46";
+            this.groupBox46.Size = new System.Drawing.Size(383, 120);
+            this.groupBox46.TabIndex = 10;
+            this.groupBox46.TabStop = false;
+            this.groupBox46.Text = "SCHEDA 1.3.1.1. ID FISCALE IVA";
+            // 
+            // label79
+            // 
+            this.label79.AutoSize = true;
+            this.label79.Location = new System.Drawing.Point(29, 69);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(80, 17);
+            this.label79.TabIndex = 11;
+            this.label79.Text = "ID CODICE:";
+            // 
+            // txtIDCodiceRappFiscale
+            // 
+            this.txtIDCodiceRappFiscale.Location = new System.Drawing.Point(139, 69);
+            this.txtIDCodiceRappFiscale.Name = "txtIDCodiceRappFiscale";
+            this.txtIDCodiceRappFiscale.Size = new System.Drawing.Size(214, 22);
+            this.txtIDCodiceRappFiscale.TabIndex = 12;
+            // 
+            // label80
+            // 
+            this.label80.AutoSize = true;
+            this.label80.Location = new System.Drawing.Point(29, 33);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(74, 17);
+            this.label80.TabIndex = 9;
+            this.label80.Text = "ID PAESE:";
+            // 
+            // txtIDPaeseRappFiscale
+            // 
+            this.txtIDPaeseRappFiscale.Location = new System.Drawing.Point(139, 30);
+            this.txtIDPaeseRappFiscale.Name = "txtIDPaeseRappFiscale";
+            this.txtIDPaeseRappFiscale.Size = new System.Drawing.Size(214, 22);
+            this.txtIDPaeseRappFiscale.TabIndex = 10;
+            // 
+            // label81
+            // 
+            this.label81.AutoSize = true;
+            this.label81.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold);
+            this.label81.Location = new System.Drawing.Point(392, 105);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(818, 35);
+            this.label81.TabIndex = 9;
+            this.label81.Text = "SCHEDA PER INSERIRE I DATI DEL RAPPRESENTANTE FISCALE:";
             // 
             // frmMain
             // 
@@ -2625,7 +2857,6 @@
             this.groupBox53.PerformLayout();
             this.groupBox54.ResumeLayout(false);
             this.groupBox54.PerformLayout();
-            this.tbControlMain.ResumeLayout(false);
             this.tbTerzoIntermediario.ResumeLayout(false);
             this.tbTerzoIntermediario.PerformLayout();
             this.gb1_5_1.ResumeLayout(false);
@@ -2635,6 +2866,16 @@
             this.groupBox63.PerformLayout();
             this.groupBox64.ResumeLayout(false);
             this.groupBox64.PerformLayout();
+            this.tbControlMain.ResumeLayout(false);
+            this.tbRappFiscale.ResumeLayout(false);
+            this.tbRappFiscale.PerformLayout();
+            this.gb1_3.ResumeLayout(false);
+            this.groupBox44.ResumeLayout(false);
+            this.groupBox44.PerformLayout();
+            this.groupBox45.ResumeLayout(false);
+            this.groupBox45.PerformLayout();
+            this.groupBox46.ResumeLayout(false);
+            this.groupBox46.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2871,6 +3112,28 @@
         private System.Windows.Forms.Label label91;
         private System.Windows.Forms.TextBox txtIdPaeseTerzoInterme;
         private System.Windows.Forms.Label label92;
+        private System.Windows.Forms.TabPage tbRappFiscale;
+        private System.Windows.Forms.GroupBox gb1_3;
+        private System.Windows.Forms.GroupBox groupBox44;
+        private System.Windows.Forms.Label label52;
+        private System.Windows.Forms.TextBox txtCodEORIRappFiscale;
+        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.TextBox txtTitoloRappFiscale;
+        private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.TextBox txtCognomeRappFiscale;
+        private System.Windows.Forms.Label label69;
+        private System.Windows.Forms.TextBox txtNomeRappFiscale;
+        private System.Windows.Forms.Label label77;
+        private System.Windows.Forms.TextBox txtDenominazioneRappFiscale;
+        private System.Windows.Forms.GroupBox groupBox45;
+        private System.Windows.Forms.Label label78;
+        private System.Windows.Forms.TextBox txtCFRappFiscale;
+        private System.Windows.Forms.GroupBox groupBox46;
+        private System.Windows.Forms.Label label79;
+        private System.Windows.Forms.TextBox txtIDCodiceRappFiscale;
+        private System.Windows.Forms.Label label80;
+        private System.Windows.Forms.TextBox txtIDPaeseRappFiscale;
+        private System.Windows.Forms.Label label81;
     }
 }
 
