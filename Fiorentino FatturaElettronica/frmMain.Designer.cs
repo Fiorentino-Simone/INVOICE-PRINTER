@@ -236,6 +236,28 @@
             this.label76 = new System.Windows.Forms.Label();
             this.tbControlMain = new System.Windows.Forms.TabControl();
             this.tbBody = new System.Windows.Forms.TabPage();
+            this.tbTerzoIntermediario = new System.Windows.Forms.TabPage();
+            this.gb1_5_1 = new System.Windows.Forms.GroupBox();
+            this.groupBox62 = new System.Windows.Forms.GroupBox();
+            this.label84 = new System.Windows.Forms.Label();
+            this.txtCodEORITerzoIntermediario = new System.Windows.Forms.TextBox();
+            this.label85 = new System.Windows.Forms.Label();
+            this.txtTitoloTerzoIntermediario = new System.Windows.Forms.TextBox();
+            this.label86 = new System.Windows.Forms.Label();
+            this.txtCognomeTerzoIntermediario = new System.Windows.Forms.TextBox();
+            this.label87 = new System.Windows.Forms.Label();
+            this.txtNomeTerzoIntermediario = new System.Windows.Forms.TextBox();
+            this.label88 = new System.Windows.Forms.Label();
+            this.txtDenominazioneTerzoIntermediario = new System.Windows.Forms.TextBox();
+            this.groupBox63 = new System.Windows.Forms.GroupBox();
+            this.label89 = new System.Windows.Forms.Label();
+            this.txtCFTerzoIntermediario = new System.Windows.Forms.TextBox();
+            this.groupBox64 = new System.Windows.Forms.GroupBox();
+            this.label90 = new System.Windows.Forms.Label();
+            this.txtIDCodiceTerzoInterme = new System.Windows.Forms.TextBox();
+            this.label91 = new System.Windows.Forms.Label();
+            this.txtIdPaeseTerzoInterme = new System.Windows.Forms.TextBox();
+            this.label92 = new System.Windows.Forms.Label();
             this.tbHeader.SuspendLayout();
             this.tbControlHeader.SuspendLayout();
             this.tbDatiTrasm.SuspendLayout();
@@ -304,6 +326,11 @@
             this.groupBox53.SuspendLayout();
             this.groupBox54.SuspendLayout();
             this.tbControlMain.SuspendLayout();
+            this.tbTerzoIntermediario.SuspendLayout();
+            this.gb1_5_1.SuspendLayout();
+            this.groupBox62.SuspendLayout();
+            this.groupBox63.SuspendLayout();
+            this.groupBox64.SuspendLayout();
             this.SuspendLayout();
             // 
             // tbHeader
@@ -325,6 +352,7 @@
             this.tbControlHeader.Controls.Add(this.tbCedentePrestatore2);
             this.tbControlHeader.Controls.Add(this.tbCessionarioCommittente1);
             this.tbControlHeader.Controls.Add(this.tbCessionarioCommittente2);
+            this.tbControlHeader.Controls.Add(this.tbTerzoIntermediario);
             this.tbControlHeader.Location = new System.Drawing.Point(0, 3);
             this.tbControlHeader.Name = "tbControlHeader";
             this.tbControlHeader.SelectedIndex = 0;
@@ -2259,6 +2287,210 @@
             this.tbBody.Text = "BODY";
             this.tbBody.UseVisualStyleBackColor = true;
             // 
+            // tbTerzoIntermediario
+            // 
+            this.tbTerzoIntermediario.Controls.Add(this.gb1_5_1);
+            this.tbTerzoIntermediario.Controls.Add(this.label92);
+            this.tbTerzoIntermediario.Location = new System.Drawing.Point(4, 25);
+            this.tbTerzoIntermediario.Name = "tbTerzoIntermediario";
+            this.tbTerzoIntermediario.Size = new System.Drawing.Size(1657, 656);
+            this.tbTerzoIntermediario.TabIndex = 5;
+            this.tbTerzoIntermediario.Text = "TERZO INTERMEDIARIO O SOGGETTO EMITTENTE";
+            this.tbTerzoIntermediario.UseVisualStyleBackColor = true;
+            // 
+            // gb1_5_1
+            // 
+            this.gb1_5_1.Controls.Add(this.groupBox62);
+            this.gb1_5_1.Controls.Add(this.groupBox63);
+            this.gb1_5_1.Controls.Add(this.groupBox64);
+            this.gb1_5_1.Location = new System.Drawing.Point(114, 153);
+            this.gb1_5_1.Name = "gb1_5_1";
+            this.gb1_5_1.Size = new System.Drawing.Size(1229, 238);
+            this.gb1_5_1.TabIndex = 8;
+            this.gb1_5_1.TabStop = false;
+            this.gb1_5_1.Text = "SCHEDA 1.5.1: DATI ANAGRAFICI";
+            // 
+            // groupBox62
+            // 
+            this.groupBox62.Controls.Add(this.label84);
+            this.groupBox62.Controls.Add(this.txtCodEORITerzoIntermediario);
+            this.groupBox62.Controls.Add(this.label85);
+            this.groupBox62.Controls.Add(this.txtTitoloTerzoIntermediario);
+            this.groupBox62.Controls.Add(this.label86);
+            this.groupBox62.Controls.Add(this.txtCognomeTerzoIntermediario);
+            this.groupBox62.Controls.Add(this.label87);
+            this.groupBox62.Controls.Add(this.txtNomeTerzoIntermediario);
+            this.groupBox62.Controls.Add(this.label88);
+            this.groupBox62.Controls.Add(this.txtDenominazioneTerzoIntermediario);
+            this.groupBox62.Location = new System.Drawing.Point(819, 21);
+            this.groupBox62.Name = "groupBox62";
+            this.groupBox62.Size = new System.Drawing.Size(383, 201);
+            this.groupBox62.TabIndex = 12;
+            this.groupBox62.TabStop = false;
+            this.groupBox62.Text = "SCHEDA 1.5.1.3. ANAGRAFICA";
+            // 
+            // label84
+            // 
+            this.label84.AutoSize = true;
+            this.label84.Location = new System.Drawing.Point(39, 171);
+            this.label84.Name = "label84";
+            this.label84.Size = new System.Drawing.Size(74, 17);
+            this.label84.TabIndex = 17;
+            this.label84.Text = "CodEORI: ";
+            // 
+            // txtCodEORITerzoIntermediario
+            // 
+            this.txtCodEORITerzoIntermediario.Location = new System.Drawing.Point(151, 166);
+            this.txtCodEORITerzoIntermediario.Name = "txtCodEORITerzoIntermediario";
+            this.txtCodEORITerzoIntermediario.Size = new System.Drawing.Size(206, 22);
+            this.txtCodEORITerzoIntermediario.TabIndex = 18;
+            // 
+            // label85
+            // 
+            this.label85.AutoSize = true;
+            this.label85.Location = new System.Drawing.Point(39, 137);
+            this.label85.Name = "label85";
+            this.label85.Size = new System.Drawing.Size(67, 17);
+            this.label85.TabIndex = 15;
+            this.label85.Text = "TITOLO: ";
+            // 
+            // txtTitoloTerzoIntermediario
+            // 
+            this.txtTitoloTerzoIntermediario.Location = new System.Drawing.Point(151, 132);
+            this.txtTitoloTerzoIntermediario.Name = "txtTitoloTerzoIntermediario";
+            this.txtTitoloTerzoIntermediario.Size = new System.Drawing.Size(206, 22);
+            this.txtTitoloTerzoIntermediario.TabIndex = 16;
+            // 
+            // label86
+            // 
+            this.label86.AutoSize = true;
+            this.label86.Location = new System.Drawing.Point(39, 103);
+            this.label86.Name = "label86";
+            this.label86.Size = new System.Drawing.Size(88, 17);
+            this.label86.TabIndex = 13;
+            this.label86.Text = "COGNOME: ";
+            // 
+            // txtCognomeTerzoIntermediario
+            // 
+            this.txtCognomeTerzoIntermediario.Location = new System.Drawing.Point(151, 98);
+            this.txtCognomeTerzoIntermediario.Name = "txtCognomeTerzoIntermediario";
+            this.txtCognomeTerzoIntermediario.Size = new System.Drawing.Size(206, 22);
+            this.txtCognomeTerzoIntermediario.TabIndex = 14;
+            // 
+            // label87
+            // 
+            this.label87.AutoSize = true;
+            this.label87.Location = new System.Drawing.Point(50, 69);
+            this.label87.Name = "label87";
+            this.label87.Size = new System.Drawing.Size(57, 17);
+            this.label87.TabIndex = 11;
+            this.label87.Text = "NOME: ";
+            // 
+            // txtNomeTerzoIntermediario
+            // 
+            this.txtNomeTerzoIntermediario.Location = new System.Drawing.Point(151, 64);
+            this.txtNomeTerzoIntermediario.Name = "txtNomeTerzoIntermediario";
+            this.txtNomeTerzoIntermediario.Size = new System.Drawing.Size(206, 22);
+            this.txtNomeTerzoIntermediario.TabIndex = 12;
+            // 
+            // label88
+            // 
+            this.label88.AutoSize = true;
+            this.label88.Location = new System.Drawing.Point(18, 35);
+            this.label88.Name = "label88";
+            this.label88.Size = new System.Drawing.Size(127, 17);
+            this.label88.TabIndex = 9;
+            this.label88.Text = "DENOMINAZIONE:";
+            // 
+            // txtDenominazioneTerzoIntermediario
+            // 
+            this.txtDenominazioneTerzoIntermediario.Location = new System.Drawing.Point(151, 30);
+            this.txtDenominazioneTerzoIntermediario.Name = "txtDenominazioneTerzoIntermediario";
+            this.txtDenominazioneTerzoIntermediario.Size = new System.Drawing.Size(206, 22);
+            this.txtDenominazioneTerzoIntermediario.TabIndex = 10;
+            // 
+            // groupBox63
+            // 
+            this.groupBox63.Controls.Add(this.label89);
+            this.groupBox63.Controls.Add(this.txtCFTerzoIntermediario);
+            this.groupBox63.Location = new System.Drawing.Point(411, 56);
+            this.groupBox63.Name = "groupBox63";
+            this.groupBox63.Size = new System.Drawing.Size(383, 71);
+            this.groupBox63.TabIndex = 11;
+            this.groupBox63.TabStop = false;
+            this.groupBox63.Text = "SCHEDA 1.5.1.2. ";
+            // 
+            // label89
+            // 
+            this.label89.AutoSize = true;
+            this.label89.Location = new System.Drawing.Point(18, 33);
+            this.label89.Name = "label89";
+            this.label89.Size = new System.Drawing.Size(122, 17);
+            this.label89.TabIndex = 9;
+            this.label89.Text = "CODICE FISCALE:";
+            // 
+            // txtCFTerzoIntermediario
+            // 
+            this.txtCFTerzoIntermediario.Location = new System.Drawing.Point(142, 28);
+            this.txtCFTerzoIntermediario.Name = "txtCFTerzoIntermediario";
+            this.txtCFTerzoIntermediario.Size = new System.Drawing.Size(213, 22);
+            this.txtCFTerzoIntermediario.TabIndex = 10;
+            // 
+            // groupBox64
+            // 
+            this.groupBox64.Controls.Add(this.label90);
+            this.groupBox64.Controls.Add(this.txtIDCodiceTerzoInterme);
+            this.groupBox64.Controls.Add(this.label91);
+            this.groupBox64.Controls.Add(this.txtIdPaeseTerzoInterme);
+            this.groupBox64.Location = new System.Drawing.Point(6, 21);
+            this.groupBox64.Name = "groupBox64";
+            this.groupBox64.Size = new System.Drawing.Size(383, 120);
+            this.groupBox64.TabIndex = 10;
+            this.groupBox64.TabStop = false;
+            this.groupBox64.Text = "SCHEDA 1.5.1.1. ID FISCALE IVA";
+            // 
+            // label90
+            // 
+            this.label90.AutoSize = true;
+            this.label90.Location = new System.Drawing.Point(29, 69);
+            this.label90.Name = "label90";
+            this.label90.Size = new System.Drawing.Size(80, 17);
+            this.label90.TabIndex = 11;
+            this.label90.Text = "ID CODICE:";
+            // 
+            // txtIDCodiceTerzoInterme
+            // 
+            this.txtIDCodiceTerzoInterme.Location = new System.Drawing.Point(139, 69);
+            this.txtIDCodiceTerzoInterme.Name = "txtIDCodiceTerzoInterme";
+            this.txtIDCodiceTerzoInterme.Size = new System.Drawing.Size(214, 22);
+            this.txtIDCodiceTerzoInterme.TabIndex = 12;
+            // 
+            // label91
+            // 
+            this.label91.AutoSize = true;
+            this.label91.Location = new System.Drawing.Point(29, 33);
+            this.label91.Name = "label91";
+            this.label91.Size = new System.Drawing.Size(74, 17);
+            this.label91.TabIndex = 9;
+            this.label91.Text = "ID PAESE:";
+            // 
+            // txtIdPaeseTerzoInterme
+            // 
+            this.txtIdPaeseTerzoInterme.Location = new System.Drawing.Point(139, 30);
+            this.txtIdPaeseTerzoInterme.Name = "txtIdPaeseTerzoInterme";
+            this.txtIdPaeseTerzoInterme.Size = new System.Drawing.Size(214, 22);
+            this.txtIdPaeseTerzoInterme.TabIndex = 10;
+            // 
+            // label92
+            // 
+            this.label92.AutoSize = true;
+            this.label92.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold);
+            this.label92.Location = new System.Drawing.Point(177, 88);
+            this.label92.Name = "label92";
+            this.label92.Size = new System.Drawing.Size(1113, 35);
+            this.label92.TabIndex = 7;
+            this.label92.Text = "SCHEDA PER INSERIRE I DATI DEL TERZO INTERMEDIARIO O SOGGETTO EMITTENTE:";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -2394,6 +2626,15 @@
             this.groupBox54.ResumeLayout(false);
             this.groupBox54.PerformLayout();
             this.tbControlMain.ResumeLayout(false);
+            this.tbTerzoIntermediario.ResumeLayout(false);
+            this.tbTerzoIntermediario.PerformLayout();
+            this.gb1_5_1.ResumeLayout(false);
+            this.groupBox62.ResumeLayout(false);
+            this.groupBox62.PerformLayout();
+            this.groupBox63.ResumeLayout(false);
+            this.groupBox63.PerformLayout();
+            this.groupBox64.ResumeLayout(false);
+            this.groupBox64.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -2608,6 +2849,28 @@
         private System.Windows.Forms.Label label75;
         private System.Windows.Forms.TextBox txtIndirizzoOrgCessionario;
         private System.Windows.Forms.Label label76;
+        private System.Windows.Forms.TabPage tbTerzoIntermediario;
+        private System.Windows.Forms.GroupBox gb1_5_1;
+        private System.Windows.Forms.GroupBox groupBox62;
+        private System.Windows.Forms.Label label84;
+        private System.Windows.Forms.TextBox txtCodEORITerzoIntermediario;
+        private System.Windows.Forms.Label label85;
+        private System.Windows.Forms.TextBox txtTitoloTerzoIntermediario;
+        private System.Windows.Forms.Label label86;
+        private System.Windows.Forms.TextBox txtCognomeTerzoIntermediario;
+        private System.Windows.Forms.Label label87;
+        private System.Windows.Forms.TextBox txtNomeTerzoIntermediario;
+        private System.Windows.Forms.Label label88;
+        private System.Windows.Forms.TextBox txtDenominazioneTerzoIntermediario;
+        private System.Windows.Forms.GroupBox groupBox63;
+        private System.Windows.Forms.Label label89;
+        private System.Windows.Forms.TextBox txtCFTerzoIntermediario;
+        private System.Windows.Forms.GroupBox groupBox64;
+        private System.Windows.Forms.Label label90;
+        private System.Windows.Forms.TextBox txtIDCodiceTerzoInterme;
+        private System.Windows.Forms.Label label91;
+        private System.Windows.Forms.TextBox txtIdPaeseTerzoInterme;
+        private System.Windows.Forms.Label label92;
     }
 }
 
