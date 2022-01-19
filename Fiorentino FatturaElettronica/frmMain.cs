@@ -8,19 +8,18 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;//import per gli XML
-using System.Threading;
+using System.Threading; //import per i THREAD
 using System.Diagnostics;
+using System.Text.RegularExpressions;
 
 namespace Fiorentino_FatturaElettronica
 {
     public partial class frmMain : Form
     {
+
         public frmMain()
         {
             InitializeComponent();
-            cmbFormatoTrasmissione.SelectedIndex = 0;
-            cmbTipoDocumento.SelectedIndex = 0;
-
             //carico cmb Regime Fiscale
             for (int i = 1; i <= 19; i++)
             {
@@ -28,74 +27,105 @@ namespace Fiorentino_FatturaElettronica
                 else cmbRegimeFiscale.Items.Add("RF" + i);
             }
 
+            #region COMBO BOX
+            cmbFormatoTrasmissione.SelectedIndex = 0;
+            cmbTipoDocumento.SelectedIndex = 0;
             cmbRegimeFiscale.SelectedIndex = 0;
-
-            /*foreach (Control c in groupBox7.Controls)
-                    {
-                        if (c is TextBox)
-                            c.Text = "";
-                    }*/
+            cmbPaese.SelectedIndex = 0;
+            cmbDivisa.SelectedIndex = 0;
+            cmbIDPaeseCessionario.SelectedIndex = 0;
+            cmbIdPaeseRappFisc.SelectedIndex = 0;
+            cmbIDPaeseRappFiscCessi.SelectedIndex = 0;
+            cmbIDPaeseTerzoIntermediario.SelectedIndex = 0;
+            cmbNazione.SelectedIndex = 0;
+            cmbNazioneCessOrg.SelectedIndex = 0;
+            cmbNazioneOrg.SelectedIndex = 0;
+            cmbNazioneRappFisc.SelectedIndex = 0;
+            cmbPaese.SelectedIndex = 0;
+            cmbPaesePrestatore.SelectedIndex = 0;
+            cmbRegimeFiscale.SelectedIndex = 0;
+            cmbSocioUnico.SelectedIndex = 0;
+            cmbSoggettoEmittente.SelectedIndex = 0;
+            cmbStatoLiquidazione.SelectedIndex = 0;
+            cmbTipoDocumento.SelectedIndex = 0;
+            #endregion
         }
 
-        /*VARIBILE: */
+        #region variabili
         public XmlTextWriter xmlWrt;
+        public static Thread thread1;
+        #endregion
 
+        bool[] erroriHeader = new bool[200];
+        bool[] erroriBody = new bool[50];
+        
         private void btnInviaFattura_Click(object sender, EventArgs e)
         {
-            string pathXml = "fattura.xml"; //anche tramite la browse file dialog come con il notepad
-            xmlWrt = new XmlTextWriter(pathXml, Encoding.UTF8);
+            bool creaFattura = true;
 
-            xmlWrt.Formatting = Formatting.Indented; //settiamo la formattazione indentata
+            /*TODO:
+             * uso due thread che mi controllano gli errori del body e del header
+             * appena trovano un errore lo segnano nel vettore
+             * controllo tramite while se almeno un errore è presente, se cosi allora non si può creare la fattura*/
 
-            #region INTESTAZIONE
-            //costruisco un nodo con WriteStartElement
-            xmlWrt.WriteStartElement("p:FatturaElettronica"); //passiamo una stringa con il nome del nodo
+            Parallel.Invoke(controlloHeader, controlloBody);
 
-            /*ATTRIBUTI*/
-            xmlWrt.WriteAttributeString("xmlns:ds", "http://www.w3.org/2000/09/xmldsig#");
-            xmlWrt.WriteAttributeString("xmlns:p", "http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2");
-            xmlWrt.WriteAttributeString("xmlns:xsi", "http://www.w3.org/2001/XMLSchema-instance");
-            xmlWrt.WriteAttributeString("versione", cmbFormatoTrasmissione.Text);
-            xmlWrt.WriteAttributeString("xsi:schemaLocation", "http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2 http://www.fatturapa.gov.it/export/fatturazione/sdi/fatturapa/v1.2/Schema_del_file_xml_FatturaPA_versione_1.2.xsd");
-            #endregion
+            if (creaFattura)
+            {
+                string pathXml = "fattura.xml"; //anche tramite la browse file dialog come con il notepad
+                xmlWrt = new XmlTextWriter(pathXml, Encoding.UTF8);
+                xmlWrt.Formatting = Formatting.Indented; //settiamo la formattazione indentata
 
-            /*HEADER*/
-            #region HEADER
-            xmlWrt.WriteStartElement("FatturaElettronicaHeader");
+                /*INTESTAZIONE*/
+                #region INTESTAZIONE
+                //costruisco un nodo con WriteStartElement
+                xmlWrt.WriteStartElement("p:FatturaElettronica"); //passiamo una stringa con il nome del nodo
 
-            DatiTrasmissione();
-            CedentePrestatore();
-            RappresentanteFiscale();
-            CessionarioCommittente();
-            TerzoIntermediario();
-            SoggettoEmittente();
+                /*ATTRIBUTI*/
+                xmlWrt.WriteAttributeString("xmlns:ds", "http://www.w3.org/2000/09/xmldsig#");
+                xmlWrt.WriteAttributeString("xmlns:p", "http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2");
+                xmlWrt.WriteAttributeString("xmlns:xsi", "http://www.w3.org/2001/XMLSchema-instance");
+                xmlWrt.WriteAttributeString("versione", cmbFormatoTrasmissione.Text);
+                xmlWrt.WriteAttributeString("xsi:schemaLocation", "http://ivaservizi.agenziaentrate.gov.it/docs/xsd/fatture/v1.2 http://www.fatturapa.gov.it/export/fatturazione/sdi/fatturapa/v1.2/Schema_del_file_xml_FatturaPA_versione_1.2.xsd");
+                #endregion
+
+                /*HEADER*/
+                #region HEADER
+                xmlWrt.WriteStartElement("FatturaElettronicaHeader");
+
+                DatiTrasmissione();
+                CedentePrestatore();
+                RappresentanteFiscale();
+                CessionarioCommittente();
+                TerzoIntermediario();
+                SoggettoEmittente();
+
+                xmlWrt.WriteEndElement(); //Header
+                #endregion
+
+                /*BODY*/
+                #region BODY
+                xmlWrt.WriteStartElement("FatturaElettronicaBody");
+
+                DatiGenerali();
+                DatiBeniServizi();
+
+                xmlWrt.WriteEndElement(); //Body
+                #endregion
+
+                xmlWrt.WriteEndElement(); //Chiude la fattura
+                xmlWrt.Close();
+                Process.Start("explorer.exe", "/select," + pathXml);
+            }
+            else
+            {
+                MessageBox.Show("Ci sono molteplici errori, andare a ricontrollare ogni casella \n per andare poi a creare correttamente la fattura", "Errore!!", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
             
-            xmlWrt.WriteEndElement(); //Header
-            #endregion
-
-            /*BODY*/
-            #region BODY
-            xmlWrt.WriteStartElement("FatturaElettronicaBody");
-
-            DatiGenerali();
-            DatiBeniServizi();
-
-            xmlWrt.WriteEndElement(); //Body
-            #endregion
-
-            xmlWrt.WriteEndElement(); //Chiude la fattura
-            xmlWrt.Close();
-            Process.Start("explorer.exe", "/select," + pathXml);
-            
-            
-            
-            /*TIPS: 
-             * 
-             * utilizzare classi apposite per migliorare la creazione dinamica del xml
-             * Uso dei thread per i controlli
-             * */
         }
 
+        #region createXMLFunctions
         private void DatiBeniServizi()
         {
             xmlWrt.WriteStartElement("DatiBeniServizi");
@@ -148,10 +178,10 @@ namespace Fiorentino_FatturaElettronica
             xmlWrt.WriteElementString("TipoDocumento", cmbTipoDocumento.Text);
 
             //<Divisa>
-            xmlWrt.WriteElementString("Divisa", txtDivisa.Text);
+            xmlWrt.WriteElementString("Divisa", cmbDivisa.Text);
 
             //<Data>
-            xmlWrt.WriteElementString("Data", txtData.Text);
+            xmlWrt.WriteElementString("Data", dtpData.Value.ToString("yyyy-MM-dd"));
 
             //<Numero>
             xmlWrt.WriteElementString("Numero", txtNumero.Text);
@@ -164,7 +194,7 @@ namespace Fiorentino_FatturaElettronica
 
         private void SoggettoEmittente()
         {
-            xmlWrt.WriteElementString("SoggettoEmittente", txtSoggettoEmittente.Text);
+            xmlWrt.WriteElementString("SoggettoEmittente", cmbSoggettoEmittente.Text);
         }
 
         private void TerzoIntermediario()
@@ -175,7 +205,7 @@ namespace Fiorentino_FatturaElettronica
             xmlWrt.WriteStartElement("DatiAnagrafici");
             //<IdFiscaleIVA>
             xmlWrt.WriteStartElement("IdFiscaleIVA");
-            xmlWrt.WriteElementString("IdPaese", txtIdPaeseTerzoInterme.Text);
+            xmlWrt.WriteElementString("IdPaese", cmbIDPaeseTerzoIntermediario.Text);
             xmlWrt.WriteElementString("IdCodice", txtIDCodiceTerzoInterme.Text);
             xmlWrt.WriteEndElement(); //<IdFiscaleIVA>
 
@@ -205,7 +235,7 @@ namespace Fiorentino_FatturaElettronica
             xmlWrt.WriteStartElement("DatiAnagrafici");
             //<IdFiscaleIVA>
             xmlWrt.WriteStartElement("IdFiscaleIVA");
-            xmlWrt.WriteElementString("IdPaese", txtIdPaeseCessionario.Text);
+            xmlWrt.WriteElementString("IdPaese", cmbIDPaeseCessionario.Text);
             xmlWrt.WriteElementString("IdCodice", txtIdCodiceCessionario.Text);
             xmlWrt.WriteEndElement(); //<IdFiscaleIVA>
 
@@ -240,7 +270,7 @@ namespace Fiorentino_FatturaElettronica
             //<Provincia>
             xmlWrt.WriteElementString("Provincia", txtProvinciaCessionario.Text);
             //<Nazione>
-            xmlWrt.WriteElementString("Nazione", txtNazioneCessionario.Text);
+            xmlWrt.WriteElementString("Nazione", cmbNazioneRappFisc.Text);
 
             xmlWrt.WriteEndElement(); //Sede
             #endregion
@@ -261,7 +291,7 @@ namespace Fiorentino_FatturaElettronica
             //<Provincia>
             xmlWrt.WriteElementString("Provincia", txtProvinciaCessionario.Text);
             //<Nazione>
-            xmlWrt.WriteElementString("Nazione", txtNazioneCessionario.Text);
+            xmlWrt.WriteElementString("Nazione", cmbNazioneRappFisc.Text);
 
             xmlWrt.WriteEndElement(); //StabileOrganizzazione
             #endregion
@@ -271,7 +301,7 @@ namespace Fiorentino_FatturaElettronica
 
             //<IdFiscaleIVA>
             xmlWrt.WriteStartElement("IdFiscaleIVA");
-            xmlWrt.WriteElementString("IdPaese", txtIDPaeseRappFiscaleCessionario.Text);
+            xmlWrt.WriteElementString("IdPaese", cmbIDPaeseRappFiscCessi.Text);
             xmlWrt.WriteElementString("IdCodice", txtIDCodiceRappFiscaleCessionario.Text);
             xmlWrt.WriteEndElement(); //<IdFiscaleIVA>
 
@@ -294,7 +324,7 @@ namespace Fiorentino_FatturaElettronica
             xmlWrt.WriteStartElement("DatiAnagrafici");
             //<IdFiscaleIVA>
             xmlWrt.WriteStartElement("IdFiscaleIVA");
-            xmlWrt.WriteElementString("IdPaese", txtIDPaeseRappFiscale.Text);
+            xmlWrt.WriteElementString("IdPaese", cmbIdPaeseRappFisc.Text);
             xmlWrt.WriteElementString("IdCodice", txtIDCodiceRappFiscale.Text);
             xmlWrt.WriteEndElement(); //<IdFiscaleIVA>
 
@@ -324,7 +354,7 @@ namespace Fiorentino_FatturaElettronica
             xmlWrt.WriteStartElement("DatiAnagrafici");
             //<IdFiscaleIVA>
             xmlWrt.WriteStartElement("IdFiscaleIVA");
-            xmlWrt.WriteElementString("IdPaese", txtIdPaese2.Text);
+            xmlWrt.WriteElementString("IdPaese", cmbPaesePrestatore.Text);
             xmlWrt.WriteElementString("IdCodice", txtCodice2.Text);
             xmlWrt.WriteEndElement(); //<IdFiscaleIVA>
 
@@ -350,7 +380,7 @@ namespace Fiorentino_FatturaElettronica
             xmlWrt.WriteElementString("NumeroIscrizioneAlbo", txtNumIscrAlbo.Text);
 
             //<<DataIscrizioneAlbo>>
-            xmlWrt.WriteElementString("DataIscrizioneAlbo", txtDataIscrizioneAlbo.Text);
+            xmlWrt.WriteElementString("DataIscrizioneAlbo", dtAlbo.Value.ToString("yyyy-MM-dd"));
 
             //<RegimeFiscale>
             xmlWrt.WriteElementString("RegimeFiscale", cmbRegimeFiscale.Text);
@@ -373,7 +403,7 @@ namespace Fiorentino_FatturaElettronica
             //<Provincia>
             xmlWrt.WriteElementString("Provincia", txtProvincia.Text);
             //<Nazione>
-            xmlWrt.WriteElementString("Nazione", txtNazione.Text);
+            xmlWrt.WriteElementString("Nazione", cmbNazione.Text);
            
             xmlWrt.WriteEndElement(); //Sede
             #endregion
@@ -394,7 +424,7 @@ namespace Fiorentino_FatturaElettronica
             //<Provincia>
             xmlWrt.WriteElementString("Provincia", txtProvinciaOrg.Text);
             //<Nazione>
-            xmlWrt.WriteElementString("Nazione", txtNazioneOrg.Text);
+            xmlWrt.WriteElementString("Nazione", cmbNazioneOrg.Text);
 
             xmlWrt.WriteEndElement(); //StabileOrganizzazione
             #endregion
@@ -412,10 +442,10 @@ namespace Fiorentino_FatturaElettronica
             xmlWrt.WriteElementString("CapitaleSociale", txtCapitaleSociale.Text);
 
             //<SocioUnico>
-            xmlWrt.WriteElementString("SocioUnico", txtSocioUnico.Text);
+            xmlWrt.WriteElementString("SocioUnico", cmbSocioUnico.Text);
 
             //<StatoLiquidazione>
-            xmlWrt.WriteElementString("StatoLiquidazione", txtStatoLiquidazione.Text);
+            xmlWrt.WriteElementString("StatoLiquidazione", cmbStatoLiquidazione.Text);
 
             xmlWrt.WriteEndElement(); //IscrizioneREA
             #endregion
@@ -443,7 +473,7 @@ namespace Fiorentino_FatturaElettronica
 
             //IdTrasmittente
             xmlWrt.WriteStartElement("IdTrasmittente");
-            xmlWrt.WriteElementString("IdPaese", txtIdPaese.Text);
+            xmlWrt.WriteElementString("IdPaese", cmbPaese.Text);
             xmlWrt.WriteElementString("IdCodice", txtIdCodice.Text);
             xmlWrt.WriteEndElement(); //IdTrasmittente
 
@@ -466,6 +496,85 @@ namespace Fiorentino_FatturaElettronica
             xmlWrt.WriteElementString("PECDestinatario", txtPECDestinatario.Text);
 
             xmlWrt.WriteEndElement(); //DatiTrasmissione
+        }
+
+        #endregion
+
+        private void btnProseguiBody_Click(object sender, EventArgs e)
+        {
+            tbControlMain.SelectTab(1); //seleziona la tabControl Body
+        }
+
+        private void txtsAlfanumerici_TextChanged(object sender, EventArgs e)
+        {
+            //qua gestiamo gli errori alfanumerici
+            Regex alfanumerico = new Regex(@"^[0-9a-z-A-Z]+$");
+            TextBox txt = (TextBox)sender;
+            if (alfanumerico.IsMatch(txt.Text) && txt.Text != "")
+                txt.BackColor = Color.White;
+            else
+                txt.BackColor = Color.FromArgb(255,77,77);
+        }
+
+        #region funzioniThread
+        private void controlloHeader()
+        {
+            //controllo header andando tramite for a scorrere i erroriHeader
+        }
+
+        private void controlloBody()
+        {
+            //controllo body andando ad usare il foreach
+
+            /*
+                * bool ok = true;
+            foreach (Control c in groupBox1.Controls)
+            {
+                if (c is TextBox)
+                    if (c.ForeColor == Color.Red)
+                        ok = false;
+            }*/
+}
+        #endregion
+
+        private void txtsProvincie_TextChanged(object sender, EventArgs e)
+        {
+            Regex provincia = new Regex(@"^[A-Z]{2}+$");
+            TextBox txt = (TextBox)sender;
+            if (provincia.IsMatch(txt.Text) && txt.Text != "")
+                txt.BackColor = Color.White;
+            else
+                txt.BackColor = Color.FromArgb(255, 77, 77);
+        }
+
+        private void txtsNumericoCAP_TextChanged(object sender, EventArgs e)
+        {
+            Regex CAP=new Regex(@"^[0-9]{5}$");
+            TextBox txt = (TextBox)sender;
+            if (CAP.IsMatch(txt.Text) && txt.Text != "")
+                txt.BackColor = Color.White;
+            else
+                txt.BackColor = Color.FromArgb(255, 77, 77);
+        }
+
+        private void txtsDecimalPoint_TextChanged(object sender, EventArgs e)
+        {
+            Regex numeriDecimaliConPuntino = new Regex(@"^[0-9]+(\.*[0-9]+)*$");
+            TextBox txt = (TextBox)sender;
+            if (numeriDecimaliConPuntino.IsMatch(txt.Text) && txt.Text != "")
+                txt.BackColor = Color.White;
+            else
+                txt.BackColor = Color.FromArgb(255, 77, 77);
+        }
+
+        private void txtsNumerico_TextChanged(object sender, EventArgs e)
+        {
+            Regex numerico = new Regex(@"^\d+$");
+            TextBox txt = (TextBox)sender;
+            if (numerico.IsMatch(txt.Text) && txt.Text != "")
+                txt.BackColor = Color.White;
+            else
+                txt.BackColor = Color.FromArgb(255, 77, 77);
         }
     }
 }
