@@ -31,11 +31,10 @@
             this.tbHeader = new System.Windows.Forms.TabPage();
             this.tbControlHeader = new System.Windows.Forms.TabControl();
             this.tbDatiTrasm = new System.Windows.Forms.TabPage();
-            this.btnInviaFattura = new System.Windows.Forms.Button();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.gb1_1_6 = new System.Windows.Forms.GroupBox();
             this.label11 = new System.Windows.Forms.Label();
             this.txtPECDestinatario = new System.Windows.Forms.TextBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.gb1_1_5 = new System.Windows.Forms.GroupBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -60,7 +59,7 @@
             this.groupBox16 = new System.Windows.Forms.GroupBox();
             this.cmbNazione = new System.Windows.Forms.ComboBox();
             this.label29 = new System.Windows.Forms.Label();
-            this.groupBox15 = new System.Windows.Forms.GroupBox();
+            this.gb1_2_2_5 = new System.Windows.Forms.GroupBox();
             this.label28 = new System.Windows.Forms.Label();
             this.txtProvincia = new System.Windows.Forms.TextBox();
             this.groupBox14 = new System.Windows.Forms.GroupBox();
@@ -69,7 +68,7 @@
             this.groupBox13 = new System.Windows.Forms.GroupBox();
             this.label26 = new System.Windows.Forms.Label();
             this.txtCAP = new System.Windows.Forms.TextBox();
-            this.groupBox12 = new System.Windows.Forms.GroupBox();
+            this.gb1_2_2_2 = new System.Windows.Forms.GroupBox();
             this.label13 = new System.Windows.Forms.Label();
             this.txtNumeroCivico = new System.Windows.Forms.TextBox();
             this.groupBox18 = new System.Windows.Forms.GroupBox();
@@ -82,13 +81,13 @@
             this.groupBox9 = new System.Windows.Forms.GroupBox();
             this.dtAlbo = new System.Windows.Forms.DateTimePicker();
             this.label23 = new System.Windows.Forms.Label();
-            this.groupBox8 = new System.Windows.Forms.GroupBox();
+            this.gb1_2_1_6 = new System.Windows.Forms.GroupBox();
             this.label22 = new System.Windows.Forms.Label();
             this.txtNumIscrAlbo = new System.Windows.Forms.TextBox();
-            this.groupBox7 = new System.Windows.Forms.GroupBox();
+            this.gb1_2_1_5 = new System.Windows.Forms.GroupBox();
             this.label21 = new System.Windows.Forms.Label();
             this.txtProvinciaAlbo = new System.Windows.Forms.TextBox();
-            this.groupBox6 = new System.Windows.Forms.GroupBox();
+            this.gb1_2_1_4 = new System.Windows.Forms.GroupBox();
             this.label20 = new System.Windows.Forms.Label();
             this.txtAlboProfessionale = new System.Windows.Forms.TextBox();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
@@ -102,7 +101,7 @@
             this.txtNome = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
             this.txtDenominazione = new System.Windows.Forms.TextBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.gb1_2_1_2 = new System.Windows.Forms.GroupBox();
             this.label15 = new System.Windows.Forms.Label();
             this.txtCFAnagrafica = new System.Windows.Forms.TextBox();
             this.groupBox5 = new System.Windows.Forms.GroupBox();
@@ -112,10 +111,10 @@
             this.label10 = new System.Windows.Forms.Label();
             this.label24 = new System.Windows.Forms.Label();
             this.tbCedentePrestatore2 = new System.Windows.Forms.TabPage();
-            this.groupBox17 = new System.Windows.Forms.GroupBox();
+            this.gb1_2_6 = new System.Windows.Forms.GroupBox();
             this.label45 = new System.Windows.Forms.Label();
             this.txtRiferimentoAmministrazione = new System.Windows.Forms.TextBox();
-            this.groupBox11 = new System.Windows.Forms.GroupBox();
+            this.gb1_2_5 = new System.Windows.Forms.GroupBox();
             this.label44 = new System.Windows.Forms.Label();
             this.txtEmailPrestatore = new System.Windows.Forms.TextBox();
             this.label37 = new System.Windows.Forms.Label();
@@ -185,7 +184,7 @@
             this.groupBox31 = new System.Windows.Forms.GroupBox();
             this.cmbNazioneRappFisc = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.groupBox32 = new System.Windows.Forms.GroupBox();
+            this.gb1_4_2_5 = new System.Windows.Forms.GroupBox();
             this.label46 = new System.Windows.Forms.Label();
             this.txtProvinciaCessionario = new System.Windows.Forms.TextBox();
             this.groupBox33 = new System.Windows.Forms.GroupBox();
@@ -194,7 +193,7 @@
             this.groupBox34 = new System.Windows.Forms.GroupBox();
             this.label48 = new System.Windows.Forms.Label();
             this.txtCAPCessionario = new System.Windows.Forms.TextBox();
-            this.groupBox35 = new System.Windows.Forms.GroupBox();
+            this.gb1_4_2_2 = new System.Windows.Forms.GroupBox();
             this.label49 = new System.Windows.Forms.Label();
             this.txtNumeroCivicoCessionario = new System.Windows.Forms.TextBox();
             this.groupBox36 = new System.Windows.Forms.GroupBox();
@@ -212,10 +211,10 @@
             this.txtNomeCessionario = new System.Windows.Forms.TextBox();
             this.label63 = new System.Windows.Forms.Label();
             this.txtDenominazioneCessionario = new System.Windows.Forms.TextBox();
-            this.groupBox41 = new System.Windows.Forms.GroupBox();
+            this.gb1_4_1_2 = new System.Windows.Forms.GroupBox();
             this.label59 = new System.Windows.Forms.Label();
             this.txtCFCessionario = new System.Windows.Forms.TextBox();
-            this.groupBox38 = new System.Windows.Forms.GroupBox();
+            this.gb1_4_1_1 = new System.Windows.Forms.GroupBox();
             this.cmbIDPaeseCessionario = new System.Windows.Forms.ComboBox();
             this.label57 = new System.Windows.Forms.Label();
             this.txtIdCodiceCessionario = new System.Windows.Forms.TextBox();
@@ -306,6 +305,7 @@
             this.label102 = new System.Windows.Forms.Label();
             this.tbDatiBeniServizi = new System.Windows.Forms.TabPage();
             this.groupBox30 = new System.Windows.Forms.GroupBox();
+            this.btnAggiungiRiepilogo = new System.Windows.Forms.Button();
             this.groupBox57 = new System.Windows.Forms.GroupBox();
             this.label98 = new System.Windows.Forms.Label();
             this.txtAliquotaIVARiepilogo = new System.Windows.Forms.TextBox();
@@ -316,6 +316,7 @@
             this.label120 = new System.Windows.Forms.Label();
             this.txtImponibileImporto = new System.Windows.Forms.TextBox();
             this.gb2_2_1 = new System.Windows.Forms.GroupBox();
+            this.btnAggiungiLinea = new System.Windows.Forms.Button();
             this.groupBox48 = new System.Windows.Forms.GroupBox();
             this.label94 = new System.Windows.Forms.Label();
             this.txtAliquotaIva = new System.Windows.Forms.TextBox();
@@ -332,11 +333,13 @@
             this.label96 = new System.Windows.Forms.Label();
             this.txtDescrizioneDBS = new System.Windows.Forms.TextBox();
             this.label97 = new System.Windows.Forms.Label();
+            this.btnInviaFattura = new System.Windows.Forms.Button();
+            this.label101 = new System.Windows.Forms.Label();
             this.tbHeader.SuspendLayout();
             this.tbControlHeader.SuspendLayout();
             this.tbDatiTrasm.SuspendLayout();
-            this.groupBox2.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.gb1_1_6.SuspendLayout();
+            this.gb1_1_5.SuspendLayout();
             this.gb1_1_4.SuspendLayout();
             this.gb1_1_3.SuspendLayout();
             this.gb1_1_2.SuspendLayout();
@@ -344,23 +347,23 @@
             this.tbCedentePrestatore1.SuspendLayout();
             this.gb1_2_2.SuspendLayout();
             this.groupBox16.SuspendLayout();
-            this.groupBox15.SuspendLayout();
+            this.gb1_2_2_5.SuspendLayout();
             this.groupBox14.SuspendLayout();
             this.groupBox13.SuspendLayout();
-            this.groupBox12.SuspendLayout();
+            this.gb1_2_2_2.SuspendLayout();
             this.groupBox18.SuspendLayout();
             this.gb1_2_1.SuspendLayout();
             this.groupBox10.SuspendLayout();
             this.groupBox9.SuspendLayout();
-            this.groupBox8.SuspendLayout();
-            this.groupBox7.SuspendLayout();
-            this.groupBox6.SuspendLayout();
+            this.gb1_2_1_6.SuspendLayout();
+            this.gb1_2_1_5.SuspendLayout();
+            this.gb1_2_1_4.SuspendLayout();
             this.groupBox4.SuspendLayout();
-            this.groupBox3.SuspendLayout();
+            this.gb1_2_1_2.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.tbCedentePrestatore2.SuspendLayout();
-            this.groupBox17.SuspendLayout();
-            this.groupBox11.SuspendLayout();
+            this.gb1_2_6.SuspendLayout();
+            this.gb1_2_5.SuspendLayout();
             this.gb1_2_4.SuspendLayout();
             this.groupBox25.SuspendLayout();
             this.groupBox26.SuspendLayout();
@@ -382,15 +385,15 @@
             this.tbCessionarioCommittente1.SuspendLayout();
             this.gb1_4_2.SuspendLayout();
             this.groupBox31.SuspendLayout();
-            this.groupBox32.SuspendLayout();
+            this.gb1_4_2_5.SuspendLayout();
             this.groupBox33.SuspendLayout();
             this.groupBox34.SuspendLayout();
-            this.groupBox35.SuspendLayout();
+            this.gb1_4_2_2.SuspendLayout();
             this.groupBox36.SuspendLayout();
             this.gb1_4_1.SuspendLayout();
             this.groupBox39.SuspendLayout();
-            this.groupBox41.SuspendLayout();
-            this.groupBox38.SuspendLayout();
+            this.gb1_4_1_2.SuspendLayout();
+            this.gb1_4_1_1.SuspendLayout();
             this.tbCessionarioCommittente2.SuspendLayout();
             this.gb1_4_4.SuspendLayout();
             this.groupBox40.SuspendLayout();
@@ -464,9 +467,8 @@
             // tbDatiTrasm
             // 
             this.tbDatiTrasm.CausesValidation = false;
-            this.tbDatiTrasm.Controls.Add(this.btnInviaFattura);
-            this.tbDatiTrasm.Controls.Add(this.groupBox2);
-            this.tbDatiTrasm.Controls.Add(this.groupBox1);
+            this.tbDatiTrasm.Controls.Add(this.gb1_1_6);
+            this.tbDatiTrasm.Controls.Add(this.gb1_1_5);
             this.tbDatiTrasm.Controls.Add(this.gb1_1_4);
             this.tbDatiTrasm.Controls.Add(this.gb1_1_3);
             this.tbDatiTrasm.Controls.Add(this.gb1_1_2);
@@ -481,29 +483,18 @@
             this.tbDatiTrasm.Text = "DATI TRASMISSIONE";
             this.tbDatiTrasm.UseVisualStyleBackColor = true;
             // 
-            // btnInviaFattura
+            // gb1_1_6
             // 
-            this.btnInviaFattura.Location = new System.Drawing.Point(455, 353);
-            this.btnInviaFattura.Margin = new System.Windows.Forms.Padding(2);
-            this.btnInviaFattura.Name = "btnInviaFattura";
-            this.btnInviaFattura.Size = new System.Drawing.Size(202, 68);
-            this.btnInviaFattura.TabIndex = 12;
-            this.btnInviaFattura.Text = "INVIA FATTURA";
-            this.btnInviaFattura.UseVisualStyleBackColor = true;
-            this.btnInviaFattura.Click += new System.EventHandler(this.btnInviaFattura_Click);
-            // 
-            // groupBox2
-            // 
-            this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.txtPECDestinatario);
-            this.groupBox2.Location = new System.Drawing.Point(728, 234);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox2.Size = new System.Drawing.Size(287, 85);
-            this.groupBox2.TabIndex = 11;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "SCHEDA 1.1.6.";
+            this.gb1_1_6.Controls.Add(this.label11);
+            this.gb1_1_6.Controls.Add(this.txtPECDestinatario);
+            this.gb1_1_6.Location = new System.Drawing.Point(814, 275);
+            this.gb1_1_6.Margin = new System.Windows.Forms.Padding(2);
+            this.gb1_1_6.Name = "gb1_1_6";
+            this.gb1_1_6.Padding = new System.Windows.Forms.Padding(2);
+            this.gb1_1_6.Size = new System.Drawing.Size(287, 85);
+            this.gb1_1_6.TabIndex = 11;
+            this.gb1_1_6.TabStop = false;
+            this.gb1_1_6.Text = "SCHEDA 1.1.6.";
             // 
             // label11
             // 
@@ -524,20 +515,20 @@
             this.txtPECDestinatario.TabIndex = 9;
             this.txtPECDestinatario.TextChanged += new System.EventHandler(this.txtsAlfanumerici_TextChanged);
             // 
-            // groupBox1
+            // gb1_1_5
             // 
-            this.groupBox1.Controls.Add(this.label8);
-            this.groupBox1.Controls.Add(this.txtEmail);
-            this.groupBox1.Controls.Add(this.label9);
-            this.groupBox1.Controls.Add(this.txtTelefono);
-            this.groupBox1.Location = new System.Drawing.Point(416, 234);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(287, 85);
-            this.groupBox1.TabIndex = 10;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "SCHEDA 1.1.5: CONTATTI TRASMITTENTE";
+            this.gb1_1_5.Controls.Add(this.label8);
+            this.gb1_1_5.Controls.Add(this.txtEmail);
+            this.gb1_1_5.Controls.Add(this.label9);
+            this.gb1_1_5.Controls.Add(this.txtTelefono);
+            this.gb1_1_5.Location = new System.Drawing.Point(502, 275);
+            this.gb1_1_5.Margin = new System.Windows.Forms.Padding(2);
+            this.gb1_1_5.Name = "gb1_1_5";
+            this.gb1_1_5.Padding = new System.Windows.Forms.Padding(2);
+            this.gb1_1_5.Size = new System.Drawing.Size(287, 85);
+            this.gb1_1_5.TabIndex = 10;
+            this.gb1_1_5.TabStop = false;
+            this.gb1_1_5.Text = "SCHEDA 1.1.5: CONTATTI TRASMITTENTE";
             // 
             // label8
             // 
@@ -581,7 +572,7 @@
             // 
             this.gb1_1_4.Controls.Add(this.label7);
             this.gb1_1_4.Controls.Add(this.txtCodiceDestinatario);
-            this.gb1_1_4.Location = new System.Drawing.Point(104, 234);
+            this.gb1_1_4.Location = new System.Drawing.Point(190, 275);
             this.gb1_1_4.Margin = new System.Windows.Forms.Padding(2);
             this.gb1_1_4.Name = "gb1_1_4";
             this.gb1_1_4.Padding = new System.Windows.Forms.Padding(2);
@@ -613,7 +604,7 @@
             // 
             this.gb1_1_3.Controls.Add(this.cmbFormatoTrasmissione);
             this.gb1_1_3.Controls.Add(this.label6);
-            this.gb1_1_3.Location = new System.Drawing.Point(728, 96);
+            this.gb1_1_3.Location = new System.Drawing.Point(814, 137);
             this.gb1_1_3.Margin = new System.Windows.Forms.Padding(2);
             this.gb1_1_3.Name = "gb1_1_3";
             this.gb1_1_3.Padding = new System.Windows.Forms.Padding(2);
@@ -648,7 +639,7 @@
             // 
             this.gb1_1_2.Controls.Add(this.label5);
             this.gb1_1_2.Controls.Add(this.txtProgressivoInvio);
-            this.gb1_1_2.Location = new System.Drawing.Point(416, 96);
+            this.gb1_1_2.Location = new System.Drawing.Point(502, 137);
             this.gb1_1_2.Margin = new System.Windows.Forms.Padding(2);
             this.gb1_1_2.Name = "gb1_1_2";
             this.gb1_1_2.Padding = new System.Windows.Forms.Padding(2);
@@ -682,7 +673,7 @@
             this.gb1_1_1.Controls.Add(this.label4);
             this.gb1_1_1.Controls.Add(this.txtIdCodice);
             this.gb1_1_1.Controls.Add(this.label3);
-            this.gb1_1_1.Location = new System.Drawing.Point(104, 96);
+            this.gb1_1_1.Location = new System.Drawing.Point(190, 137);
             this.gb1_1_1.Margin = new System.Windows.Forms.Padding(2);
             this.gb1_1_1.Name = "gb1_1_1";
             this.gb1_1_1.Padding = new System.Windows.Forms.Padding(2);
@@ -986,7 +977,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(310, 50);
+            this.label1.Location = new System.Drawing.Point(396, 91);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(488, 27);
@@ -1010,12 +1001,12 @@
             // gb1_2_2
             // 
             this.gb1_2_2.Controls.Add(this.groupBox16);
-            this.gb1_2_2.Controls.Add(this.groupBox15);
+            this.gb1_2_2.Controls.Add(this.gb1_2_2_5);
             this.gb1_2_2.Controls.Add(this.groupBox14);
             this.gb1_2_2.Controls.Add(this.groupBox13);
-            this.gb1_2_2.Controls.Add(this.groupBox12);
+            this.gb1_2_2.Controls.Add(this.gb1_2_2_2);
             this.gb1_2_2.Controls.Add(this.groupBox18);
-            this.gb1_2_2.Location = new System.Drawing.Point(111, 336);
+            this.gb1_2_2.Location = new System.Drawing.Point(180, 337);
             this.gb1_2_2.Margin = new System.Windows.Forms.Padding(2);
             this.gb1_2_2.Name = "gb1_2_2";
             this.gb1_2_2.Padding = new System.Windows.Forms.Padding(2);
@@ -1309,18 +1300,18 @@
             this.label29.TabIndex = 9;
             this.label29.Text = "NAZIONE:";
             // 
-            // groupBox15
+            // gb1_2_2_5
             // 
-            this.groupBox15.Controls.Add(this.label28);
-            this.groupBox15.Controls.Add(this.txtProvincia);
-            this.groupBox15.Location = new System.Drawing.Point(308, 80);
-            this.groupBox15.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox15.Name = "groupBox15";
-            this.groupBox15.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox15.Size = new System.Drawing.Size(287, 58);
-            this.groupBox15.TabIndex = 15;
-            this.groupBox15.TabStop = false;
-            this.groupBox15.Text = "SCHEDA 1.2.2.5. ";
+            this.gb1_2_2_5.Controls.Add(this.label28);
+            this.gb1_2_2_5.Controls.Add(this.txtProvincia);
+            this.gb1_2_2_5.Location = new System.Drawing.Point(308, 80);
+            this.gb1_2_2_5.Margin = new System.Windows.Forms.Padding(2);
+            this.gb1_2_2_5.Name = "gb1_2_2_5";
+            this.gb1_2_2_5.Padding = new System.Windows.Forms.Padding(2);
+            this.gb1_2_2_5.Size = new System.Drawing.Size(287, 58);
+            this.gb1_2_2_5.TabIndex = 15;
+            this.gb1_2_2_5.TabStop = false;
+            this.gb1_2_2_5.Text = "SCHEDA 1.2.2.5. ";
             // 
             // label28
             // 
@@ -1405,18 +1396,18 @@
             this.txtCAP.TabIndex = 10;
             this.txtCAP.TextChanged += new System.EventHandler(this.txtsNumericoCAP_TextChanged);
             // 
-            // groupBox12
+            // gb1_2_2_2
             // 
-            this.groupBox12.Controls.Add(this.label13);
-            this.groupBox12.Controls.Add(this.txtNumeroCivico);
-            this.groupBox12.Location = new System.Drawing.Point(308, 17);
-            this.groupBox12.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox12.Name = "groupBox12";
-            this.groupBox12.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox12.Size = new System.Drawing.Size(287, 58);
-            this.groupBox12.TabIndex = 12;
-            this.groupBox12.TabStop = false;
-            this.groupBox12.Text = "SCHEDA 1.2.2.2. ";
+            this.gb1_2_2_2.Controls.Add(this.label13);
+            this.gb1_2_2_2.Controls.Add(this.txtNumeroCivico);
+            this.gb1_2_2_2.Location = new System.Drawing.Point(308, 17);
+            this.gb1_2_2_2.Margin = new System.Windows.Forms.Padding(2);
+            this.gb1_2_2_2.Name = "gb1_2_2_2";
+            this.gb1_2_2_2.Padding = new System.Windows.Forms.Padding(2);
+            this.gb1_2_2_2.Size = new System.Drawing.Size(287, 58);
+            this.gb1_2_2_2.TabIndex = 12;
+            this.gb1_2_2_2.TabStop = false;
+            this.gb1_2_2_2.Text = "SCHEDA 1.2.2.2. ";
             // 
             // label13
             // 
@@ -1473,13 +1464,13 @@
             // 
             this.gb1_2_1.Controls.Add(this.groupBox10);
             this.gb1_2_1.Controls.Add(this.groupBox9);
-            this.gb1_2_1.Controls.Add(this.groupBox8);
-            this.gb1_2_1.Controls.Add(this.groupBox7);
-            this.gb1_2_1.Controls.Add(this.groupBox6);
+            this.gb1_2_1.Controls.Add(this.gb1_2_1_6);
+            this.gb1_2_1.Controls.Add(this.gb1_2_1_5);
+            this.gb1_2_1.Controls.Add(this.gb1_2_1_4);
             this.gb1_2_1.Controls.Add(this.groupBox4);
-            this.gb1_2_1.Controls.Add(this.groupBox3);
+            this.gb1_2_1.Controls.Add(this.gb1_2_1_2);
             this.gb1_2_1.Controls.Add(this.groupBox5);
-            this.gb1_2_1.Location = new System.Drawing.Point(111, 61);
+            this.gb1_2_1.Location = new System.Drawing.Point(180, 62);
             this.gb1_2_1.Margin = new System.Windows.Forms.Padding(2);
             this.gb1_2_1.Name = "gb1_2_1";
             this.gb1_2_1.Padding = new System.Windows.Forms.Padding(2);
@@ -1552,18 +1543,18 @@
             this.label23.TabIndex = 9;
             this.label23.Text = "DATA ISCRIZIONE ALBO:";
             // 
-            // groupBox8
+            // gb1_2_1_6
             // 
-            this.groupBox8.Controls.Add(this.label22);
-            this.groupBox8.Controls.Add(this.txtNumIscrAlbo);
-            this.groupBox8.Location = new System.Drawing.Point(4, 196);
-            this.groupBox8.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox8.Name = "groupBox8";
-            this.groupBox8.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox8.Size = new System.Drawing.Size(287, 58);
-            this.groupBox8.TabIndex = 15;
-            this.groupBox8.TabStop = false;
-            this.groupBox8.Text = "SCHEDA 1.2.1.6. ";
+            this.gb1_2_1_6.Controls.Add(this.label22);
+            this.gb1_2_1_6.Controls.Add(this.txtNumIscrAlbo);
+            this.gb1_2_1_6.Location = new System.Drawing.Point(4, 196);
+            this.gb1_2_1_6.Margin = new System.Windows.Forms.Padding(2);
+            this.gb1_2_1_6.Name = "gb1_2_1_6";
+            this.gb1_2_1_6.Padding = new System.Windows.Forms.Padding(2);
+            this.gb1_2_1_6.Size = new System.Drawing.Size(287, 58);
+            this.gb1_2_1_6.TabIndex = 15;
+            this.gb1_2_1_6.TabStop = false;
+            this.gb1_2_1_6.Text = "SCHEDA 1.2.1.6. ";
             // 
             // label22
             // 
@@ -1584,18 +1575,18 @@
             this.txtNumIscrAlbo.TabIndex = 10;
             this.txtNumIscrAlbo.TextChanged += new System.EventHandler(this.txtsAlfanumerici_TextChanged);
             // 
-            // groupBox7
+            // gb1_2_1_5
             // 
-            this.groupBox7.Controls.Add(this.label21);
-            this.groupBox7.Controls.Add(this.txtProvinciaAlbo);
-            this.groupBox7.Location = new System.Drawing.Point(308, 124);
-            this.groupBox7.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox7.Size = new System.Drawing.Size(287, 58);
-            this.groupBox7.TabIndex = 14;
-            this.groupBox7.TabStop = false;
-            this.groupBox7.Text = "SCHEDA 1.2.1.5. ";
+            this.gb1_2_1_5.Controls.Add(this.label21);
+            this.gb1_2_1_5.Controls.Add(this.txtProvinciaAlbo);
+            this.gb1_2_1_5.Location = new System.Drawing.Point(308, 124);
+            this.gb1_2_1_5.Margin = new System.Windows.Forms.Padding(2);
+            this.gb1_2_1_5.Name = "gb1_2_1_5";
+            this.gb1_2_1_5.Padding = new System.Windows.Forms.Padding(2);
+            this.gb1_2_1_5.Size = new System.Drawing.Size(287, 58);
+            this.gb1_2_1_5.TabIndex = 14;
+            this.gb1_2_1_5.TabStop = false;
+            this.gb1_2_1_5.Text = "SCHEDA 1.2.1.5. ";
             // 
             // label21
             // 
@@ -1616,18 +1607,18 @@
             this.txtProvinciaAlbo.TabIndex = 10;
             this.txtProvinciaAlbo.TextChanged += new System.EventHandler(this.txtsProvincie_TextChanged);
             // 
-            // groupBox6
+            // gb1_2_1_4
             // 
-            this.groupBox6.Controls.Add(this.label20);
-            this.groupBox6.Controls.Add(this.txtAlboProfessionale);
-            this.groupBox6.Location = new System.Drawing.Point(4, 124);
-            this.groupBox6.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox6.Size = new System.Drawing.Size(287, 58);
-            this.groupBox6.TabIndex = 13;
-            this.groupBox6.TabStop = false;
-            this.groupBox6.Text = "SCHEDA 1.2.1.4. ";
+            this.gb1_2_1_4.Controls.Add(this.label20);
+            this.gb1_2_1_4.Controls.Add(this.txtAlboProfessionale);
+            this.gb1_2_1_4.Location = new System.Drawing.Point(4, 124);
+            this.gb1_2_1_4.Margin = new System.Windows.Forms.Padding(2);
+            this.gb1_2_1_4.Name = "gb1_2_1_4";
+            this.gb1_2_1_4.Padding = new System.Windows.Forms.Padding(2);
+            this.gb1_2_1_4.Size = new System.Drawing.Size(287, 58);
+            this.gb1_2_1_4.TabIndex = 13;
+            this.gb1_2_1_4.TabStop = false;
+            this.gb1_2_1_4.Text = "SCHEDA 1.2.1.4. ";
             // 
             // label20
             // 
@@ -1764,18 +1755,18 @@
             this.txtDenominazione.TabIndex = 10;
             this.txtDenominazione.TextChanged += new System.EventHandler(this.txtsAlfanumerici_TextChanged);
             // 
-            // groupBox3
+            // gb1_2_1_2
             // 
-            this.groupBox3.Controls.Add(this.label15);
-            this.groupBox3.Controls.Add(this.txtCFAnagrafica);
-            this.groupBox3.Location = new System.Drawing.Point(308, 46);
-            this.groupBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox3.Size = new System.Drawing.Size(287, 58);
-            this.groupBox3.TabIndex = 11;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "SCHEDA 1.2.1.2. ";
+            this.gb1_2_1_2.Controls.Add(this.label15);
+            this.gb1_2_1_2.Controls.Add(this.txtCFAnagrafica);
+            this.gb1_2_1_2.Location = new System.Drawing.Point(308, 46);
+            this.gb1_2_1_2.Margin = new System.Windows.Forms.Padding(2);
+            this.gb1_2_1_2.Name = "gb1_2_1_2";
+            this.gb1_2_1_2.Padding = new System.Windows.Forms.Padding(2);
+            this.gb1_2_1_2.Size = new System.Drawing.Size(287, 58);
+            this.gb1_2_1_2.TabIndex = 11;
+            this.gb1_2_1_2.TabStop = false;
+            this.gb1_2_1_2.Text = "SCHEDA 1.2.1.2. ";
             // 
             // label15
             // 
@@ -2106,7 +2097,7 @@
             // 
             this.label24.AutoSize = true;
             this.label24.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label24.Location = new System.Drawing.Point(264, 22);
+            this.label24.Location = new System.Drawing.Point(333, 23);
             this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(691, 27);
@@ -2115,8 +2106,8 @@
             // 
             // tbCedentePrestatore2
             // 
-            this.tbCedentePrestatore2.Controls.Add(this.groupBox17);
-            this.tbCedentePrestatore2.Controls.Add(this.groupBox11);
+            this.tbCedentePrestatore2.Controls.Add(this.gb1_2_6);
+            this.tbCedentePrestatore2.Controls.Add(this.gb1_2_5);
             this.tbCedentePrestatore2.Controls.Add(this.gb1_2_4);
             this.tbCedentePrestatore2.Controls.Add(this.gb1_2_3);
             this.tbCedentePrestatore2.Controls.Add(this.label50);
@@ -2128,18 +2119,18 @@
             this.tbCedentePrestatore2.Text = "2_CEDENTE PRESTATORE";
             this.tbCedentePrestatore2.UseVisualStyleBackColor = true;
             // 
-            // groupBox17
+            // gb1_2_6
             // 
-            this.groupBox17.Controls.Add(this.label45);
-            this.groupBox17.Controls.Add(this.txtRiferimentoAmministrazione);
-            this.groupBox17.Location = new System.Drawing.Point(610, 391);
-            this.groupBox17.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox17.Name = "groupBox17";
-            this.groupBox17.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox17.Size = new System.Drawing.Size(338, 85);
-            this.groupBox17.TabIndex = 12;
-            this.groupBox17.TabStop = false;
-            this.groupBox17.Text = "SCHEDA 1.2.6";
+            this.gb1_2_6.Controls.Add(this.label45);
+            this.gb1_2_6.Controls.Add(this.txtRiferimentoAmministrazione);
+            this.gb1_2_6.Location = new System.Drawing.Point(707, 388);
+            this.gb1_2_6.Margin = new System.Windows.Forms.Padding(2);
+            this.gb1_2_6.Name = "gb1_2_6";
+            this.gb1_2_6.Padding = new System.Windows.Forms.Padding(2);
+            this.gb1_2_6.Size = new System.Drawing.Size(338, 85);
+            this.gb1_2_6.TabIndex = 12;
+            this.gb1_2_6.TabStop = false;
+            this.gb1_2_6.Text = "SCHEDA 1.2.6";
             // 
             // label45
             // 
@@ -2160,22 +2151,22 @@
             this.txtRiferimentoAmministrazione.TabIndex = 9;
             this.txtRiferimentoAmministrazione.TextChanged += new System.EventHandler(this.txtsAlfanumerici_TextChanged);
             // 
-            // groupBox11
+            // gb1_2_5
             // 
-            this.groupBox11.Controls.Add(this.label44);
-            this.groupBox11.Controls.Add(this.txtEmailPrestatore);
-            this.groupBox11.Controls.Add(this.label37);
-            this.groupBox11.Controls.Add(this.txtFaxPrestatore);
-            this.groupBox11.Controls.Add(this.label43);
-            this.groupBox11.Controls.Add(this.txtContattiPrestatore);
-            this.groupBox11.Location = new System.Drawing.Point(246, 379);
-            this.groupBox11.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox11.Size = new System.Drawing.Size(292, 115);
-            this.groupBox11.TabIndex = 11;
-            this.groupBox11.TabStop = false;
-            this.groupBox11.Text = "SCHEDA 1.2.5: CONTATTI";
+            this.gb1_2_5.Controls.Add(this.label44);
+            this.gb1_2_5.Controls.Add(this.txtEmailPrestatore);
+            this.gb1_2_5.Controls.Add(this.label37);
+            this.gb1_2_5.Controls.Add(this.txtFaxPrestatore);
+            this.gb1_2_5.Controls.Add(this.label43);
+            this.gb1_2_5.Controls.Add(this.txtContattiPrestatore);
+            this.gb1_2_5.Location = new System.Drawing.Point(343, 376);
+            this.gb1_2_5.Margin = new System.Windows.Forms.Padding(2);
+            this.gb1_2_5.Name = "gb1_2_5";
+            this.gb1_2_5.Padding = new System.Windows.Forms.Padding(2);
+            this.gb1_2_5.Size = new System.Drawing.Size(292, 115);
+            this.gb1_2_5.TabIndex = 11;
+            this.gb1_2_5.TabStop = false;
+            this.gb1_2_5.Text = "SCHEDA 1.2.5: CONTATTI";
             // 
             // label44
             // 
@@ -2241,7 +2232,7 @@
             this.gb1_2_4.Controls.Add(this.groupBox27);
             this.gb1_2_4.Controls.Add(this.groupBox28);
             this.gb1_2_4.Controls.Add(this.groupBox29);
-            this.gb1_2_4.Location = new System.Drawing.Point(90, 223);
+            this.gb1_2_4.Location = new System.Drawing.Point(187, 220);
             this.gb1_2_4.Margin = new System.Windows.Forms.Padding(2);
             this.gb1_2_4.Name = "gb1_2_4";
             this.gb1_2_4.Padding = new System.Windows.Forms.Padding(2);
@@ -2422,7 +2413,7 @@
             this.gb1_2_3.Controls.Add(this.groupBox22);
             this.gb1_2_3.Controls.Add(this.groupBox23);
             this.gb1_2_3.Controls.Add(this.groupBox24);
-            this.gb1_2_3.Location = new System.Drawing.Point(90, 70);
+            this.gb1_2_3.Location = new System.Drawing.Point(187, 67);
             this.gb1_2_3.Margin = new System.Windows.Forms.Padding(2);
             this.gb1_2_3.Name = "gb1_2_3";
             this.gb1_2_3.Padding = new System.Windows.Forms.Padding(2);
@@ -2880,7 +2871,7 @@
             // 
             this.label50.AutoSize = true;
             this.label50.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label50.Location = new System.Drawing.Point(232, 26);
+            this.label50.Location = new System.Drawing.Point(329, 23);
             this.label50.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label50.Name = "label50";
             this.label50.Size = new System.Drawing.Size(691, 27);
@@ -2904,7 +2895,7 @@
             this.gb1_3.Controls.Add(this.groupBox44);
             this.gb1_3.Controls.Add(this.groupBox45);
             this.gb1_3.Controls.Add(this.groupBox46);
-            this.gb1_3.Location = new System.Drawing.Point(112, 109);
+            this.gb1_3.Location = new System.Drawing.Point(180, 136);
             this.gb1_3.Margin = new System.Windows.Forms.Padding(2);
             this.gb1_3.Name = "gb1_3";
             this.gb1_3.Padding = new System.Windows.Forms.Padding(2);
@@ -3371,7 +3362,7 @@
             // 
             this.label81.AutoSize = true;
             this.label81.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label81.Location = new System.Drawing.Point(309, 63);
+            this.label81.Location = new System.Drawing.Point(377, 90);
             this.label81.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label81.Name = "label81";
             this.label81.Size = new System.Drawing.Size(643, 27);
@@ -3394,12 +3385,12 @@
             // gb1_4_2
             // 
             this.gb1_4_2.Controls.Add(this.groupBox31);
-            this.gb1_4_2.Controls.Add(this.groupBox32);
+            this.gb1_4_2.Controls.Add(this.gb1_4_2_5);
             this.gb1_4_2.Controls.Add(this.groupBox33);
             this.gb1_4_2.Controls.Add(this.groupBox34);
-            this.gb1_4_2.Controls.Add(this.groupBox35);
+            this.gb1_4_2.Controls.Add(this.gb1_4_2_2);
             this.gb1_4_2.Controls.Add(this.groupBox36);
-            this.gb1_4_2.Location = new System.Drawing.Point(115, 316);
+            this.gb1_4_2.Location = new System.Drawing.Point(193, 315);
             this.gb1_4_2.Margin = new System.Windows.Forms.Padding(2);
             this.gb1_4_2.Name = "gb1_4_2";
             this.gb1_4_2.Padding = new System.Windows.Forms.Padding(2);
@@ -3693,18 +3684,18 @@
             this.label12.TabIndex = 9;
             this.label12.Text = "NAZIONE:";
             // 
-            // groupBox32
+            // gb1_4_2_5
             // 
-            this.groupBox32.Controls.Add(this.label46);
-            this.groupBox32.Controls.Add(this.txtProvinciaCessionario);
-            this.groupBox32.Location = new System.Drawing.Point(308, 80);
-            this.groupBox32.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox32.Name = "groupBox32";
-            this.groupBox32.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox32.Size = new System.Drawing.Size(287, 58);
-            this.groupBox32.TabIndex = 15;
-            this.groupBox32.TabStop = false;
-            this.groupBox32.Text = "SCHEDA 1.4.2.5. ";
+            this.gb1_4_2_5.Controls.Add(this.label46);
+            this.gb1_4_2_5.Controls.Add(this.txtProvinciaCessionario);
+            this.gb1_4_2_5.Location = new System.Drawing.Point(308, 80);
+            this.gb1_4_2_5.Margin = new System.Windows.Forms.Padding(2);
+            this.gb1_4_2_5.Name = "gb1_4_2_5";
+            this.gb1_4_2_5.Padding = new System.Windows.Forms.Padding(2);
+            this.gb1_4_2_5.Size = new System.Drawing.Size(287, 58);
+            this.gb1_4_2_5.TabIndex = 15;
+            this.gb1_4_2_5.TabStop = false;
+            this.gb1_4_2_5.Text = "SCHEDA 1.4.2.5. ";
             // 
             // label46
             // 
@@ -3789,18 +3780,18 @@
             this.txtCAPCessionario.TabIndex = 10;
             this.txtCAPCessionario.TextChanged += new System.EventHandler(this.txtsNumericoCAP_TextChanged);
             // 
-            // groupBox35
+            // gb1_4_2_2
             // 
-            this.groupBox35.Controls.Add(this.label49);
-            this.groupBox35.Controls.Add(this.txtNumeroCivicoCessionario);
-            this.groupBox35.Location = new System.Drawing.Point(308, 17);
-            this.groupBox35.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox35.Name = "groupBox35";
-            this.groupBox35.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox35.Size = new System.Drawing.Size(287, 58);
-            this.groupBox35.TabIndex = 12;
-            this.groupBox35.TabStop = false;
-            this.groupBox35.Text = "SCHEDA 1.4.2.2. ";
+            this.gb1_4_2_2.Controls.Add(this.label49);
+            this.gb1_4_2_2.Controls.Add(this.txtNumeroCivicoCessionario);
+            this.gb1_4_2_2.Location = new System.Drawing.Point(308, 17);
+            this.gb1_4_2_2.Margin = new System.Windows.Forms.Padding(2);
+            this.gb1_4_2_2.Name = "gb1_4_2_2";
+            this.gb1_4_2_2.Padding = new System.Windows.Forms.Padding(2);
+            this.gb1_4_2_2.Size = new System.Drawing.Size(287, 58);
+            this.gb1_4_2_2.TabIndex = 12;
+            this.gb1_4_2_2.TabStop = false;
+            this.gb1_4_2_2.Text = "SCHEDA 1.4.2.2. ";
             // 
             // label49
             // 
@@ -3856,9 +3847,9 @@
             // gb1_4_1
             // 
             this.gb1_4_1.Controls.Add(this.groupBox39);
-            this.gb1_4_1.Controls.Add(this.groupBox41);
-            this.gb1_4_1.Controls.Add(this.groupBox38);
-            this.gb1_4_1.Location = new System.Drawing.Point(115, 79);
+            this.gb1_4_1.Controls.Add(this.gb1_4_1_2);
+            this.gb1_4_1.Controls.Add(this.gb1_4_1_1);
+            this.gb1_4_1.Location = new System.Drawing.Point(193, 78);
             this.gb1_4_1.Margin = new System.Windows.Forms.Padding(2);
             this.gb1_4_1.Name = "gb1_4_1";
             this.gb1_4_1.Padding = new System.Windows.Forms.Padding(2);
@@ -3983,18 +3974,18 @@
             this.txtDenominazioneCessionario.TabIndex = 10;
             this.txtDenominazioneCessionario.TextChanged += new System.EventHandler(this.txtsAlfanumerici_TextChanged);
             // 
-            // groupBox41
+            // gb1_4_1_2
             // 
-            this.groupBox41.Controls.Add(this.label59);
-            this.groupBox41.Controls.Add(this.txtCFCessionario);
-            this.groupBox41.Location = new System.Drawing.Point(308, 41);
-            this.groupBox41.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox41.Name = "groupBox41";
-            this.groupBox41.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox41.Size = new System.Drawing.Size(287, 58);
-            this.groupBox41.TabIndex = 18;
-            this.groupBox41.TabStop = false;
-            this.groupBox41.Text = "SCHEDA 1.4.1.2. ";
+            this.gb1_4_1_2.Controls.Add(this.label59);
+            this.gb1_4_1_2.Controls.Add(this.txtCFCessionario);
+            this.gb1_4_1_2.Location = new System.Drawing.Point(308, 41);
+            this.gb1_4_1_2.Margin = new System.Windows.Forms.Padding(2);
+            this.gb1_4_1_2.Name = "gb1_4_1_2";
+            this.gb1_4_1_2.Padding = new System.Windows.Forms.Padding(2);
+            this.gb1_4_1_2.Size = new System.Drawing.Size(287, 58);
+            this.gb1_4_1_2.TabIndex = 18;
+            this.gb1_4_1_2.TabStop = false;
+            this.gb1_4_1_2.Text = "SCHEDA 1.4.1.2. ";
             // 
             // label59
             // 
@@ -4015,20 +4006,20 @@
             this.txtCFCessionario.TabIndex = 10;
             this.txtCFCessionario.TextChanged += new System.EventHandler(this.txtsAlfanumerici_TextChanged);
             // 
-            // groupBox38
+            // gb1_4_1_1
             // 
-            this.groupBox38.Controls.Add(this.cmbIDPaeseCessionario);
-            this.groupBox38.Controls.Add(this.label57);
-            this.groupBox38.Controls.Add(this.txtIdCodiceCessionario);
-            this.groupBox38.Controls.Add(this.label60);
-            this.groupBox38.Location = new System.Drawing.Point(4, 17);
-            this.groupBox38.Margin = new System.Windows.Forms.Padding(2);
-            this.groupBox38.Name = "groupBox38";
-            this.groupBox38.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox38.Size = new System.Drawing.Size(287, 98);
-            this.groupBox38.TabIndex = 17;
-            this.groupBox38.TabStop = false;
-            this.groupBox38.Text = "SCHEDA 1.4.1.1. ID FISCALE IVA";
+            this.gb1_4_1_1.Controls.Add(this.cmbIDPaeseCessionario);
+            this.gb1_4_1_1.Controls.Add(this.label57);
+            this.gb1_4_1_1.Controls.Add(this.txtIdCodiceCessionario);
+            this.gb1_4_1_1.Controls.Add(this.label60);
+            this.gb1_4_1_1.Location = new System.Drawing.Point(4, 17);
+            this.gb1_4_1_1.Margin = new System.Windows.Forms.Padding(2);
+            this.gb1_4_1_1.Name = "gb1_4_1_1";
+            this.gb1_4_1_1.Padding = new System.Windows.Forms.Padding(2);
+            this.gb1_4_1_1.Size = new System.Drawing.Size(287, 98);
+            this.gb1_4_1_1.TabIndex = 17;
+            this.gb1_4_1_1.TabStop = false;
+            this.gb1_4_1_1.Text = "SCHEDA 1.4.1.1. ID FISCALE IVA";
             // 
             // cmbIDPaeseCessionario
             // 
@@ -4325,7 +4316,7 @@
             // 
             this.label61.AutoSize = true;
             this.label61.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label61.Location = new System.Drawing.Point(228, 31);
+            this.label61.Location = new System.Drawing.Point(306, 30);
             this.label61.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label61.Name = "label61";
             this.label61.Size = new System.Drawing.Size(757, 27);
@@ -4351,7 +4342,7 @@
             this.gb1_4_4.Controls.Add(this.groupBox42);
             this.gb1_4_4.Controls.Add(this.groupBox43);
             this.gb1_4_4.Controls.Add(this.groupBox37);
-            this.gb1_4_4.Location = new System.Drawing.Point(110, 255);
+            this.gb1_4_4.Location = new System.Drawing.Point(192, 254);
             this.gb1_4_4.Margin = new System.Windows.Forms.Padding(2);
             this.gb1_4_4.Name = "gb1_4_4";
             this.gb1_4_4.Padding = new System.Windows.Forms.Padding(2);
@@ -4770,7 +4761,7 @@
             this.gb1_4_3.Controls.Add(this.groupBox52);
             this.gb1_4_3.Controls.Add(this.groupBox53);
             this.gb1_4_3.Controls.Add(this.groupBox54);
-            this.gb1_4_3.Location = new System.Drawing.Point(110, 101);
+            this.gb1_4_3.Location = new System.Drawing.Point(192, 100);
             this.gb1_4_3.Margin = new System.Windows.Forms.Padding(2);
             this.gb1_4_3.Name = "gb1_4_3";
             this.gb1_4_3.Padding = new System.Windows.Forms.Padding(2);
@@ -5228,7 +5219,7 @@
             // 
             this.label76.AutoSize = true;
             this.label76.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label76.Location = new System.Drawing.Point(223, 62);
+            this.label76.Location = new System.Drawing.Point(305, 61);
             this.label76.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label76.Name = "label76";
             this.label76.Size = new System.Drawing.Size(765, 27);
@@ -5252,7 +5243,7 @@
             this.gb1_5_1.Controls.Add(this.groupBox62);
             this.gb1_5_1.Controls.Add(this.groupBox63);
             this.gb1_5_1.Controls.Add(this.groupBox64);
-            this.gb1_5_1.Location = new System.Drawing.Point(108, 98);
+            this.gb1_5_1.Location = new System.Drawing.Point(194, 162);
             this.gb1_5_1.Margin = new System.Windows.Forms.Padding(2);
             this.gb1_5_1.Name = "gb1_5_1";
             this.gb1_5_1.Padding = new System.Windows.Forms.Padding(2);
@@ -5719,7 +5710,7 @@
             // 
             this.label92.AutoSize = true;
             this.label92.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label92.Location = new System.Drawing.Point(155, 45);
+            this.label92.Location = new System.Drawing.Point(241, 109);
             this.label92.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label92.Name = "label92";
             this.label92.Size = new System.Drawing.Size(877, 27);
@@ -5744,7 +5735,7 @@
             // 
             this.gb1_6.Controls.Add(this.cmbSoggettoEmittente);
             this.gb1_6.Controls.Add(this.label83);
-            this.gb1_6.Location = new System.Drawing.Point(594, 82);
+            this.gb1_6.Location = new System.Drawing.Point(659, 106);
             this.gb1_6.Margin = new System.Windows.Forms.Padding(2);
             this.gb1_6.Name = "gb1_6";
             this.gb1_6.Padding = new System.Windows.Forms.Padding(2);
@@ -5777,7 +5768,7 @@
             // btnProseguiBody
             // 
             this.btnProseguiBody.Image = global::Fiorentino_FatturaElettronica.Properties.Resources.arrowNext;
-            this.btnProseguiBody.Location = new System.Drawing.Point(490, 280);
+            this.btnProseguiBody.Location = new System.Drawing.Point(555, 304);
             this.btnProseguiBody.Margin = new System.Windows.Forms.Padding(2);
             this.btnProseguiBody.Name = "btnProseguiBody";
             this.btnProseguiBody.Size = new System.Drawing.Size(184, 74);
@@ -5789,7 +5780,7 @@
             // 
             this.label82.AutoSize = true;
             this.label82.Font = new System.Drawing.Font("Comic Sans MS", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label82.Location = new System.Drawing.Point(112, 240);
+            this.label82.Location = new System.Drawing.Point(177, 264);
             this.label82.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label82.Name = "label82";
             this.label82.Size = new System.Drawing.Size(996, 21);
@@ -5801,7 +5792,7 @@
             // 
             this.label99.AutoSize = true;
             this.label99.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label99.Location = new System.Drawing.Point(80, 100);
+            this.label99.Location = new System.Drawing.Point(145, 124);
             this.label99.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label99.Name = "label99";
             this.label99.Size = new System.Drawing.Size(510, 27);
@@ -5859,7 +5850,7 @@
             this.gb2_1_1.Controls.Add(this.groupBox59);
             this.gb2_1_1.Controls.Add(this.groupBox66);
             this.gb2_1_1.Controls.Add(this.groupBox69);
-            this.gb2_1_1.Location = new System.Drawing.Point(236, 62);
+            this.gb2_1_1.Location = new System.Drawing.Point(343, 140);
             this.gb2_1_1.Margin = new System.Windows.Forms.Padding(2);
             this.gb2_1_1.Name = "gb2_1_1";
             this.gb2_1_1.Padding = new System.Windows.Forms.Padding(2);
@@ -6175,7 +6166,7 @@
             // 
             this.label102.AutoSize = true;
             this.label102.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label102.Location = new System.Drawing.Point(359, 15);
+            this.label102.Location = new System.Drawing.Point(466, 93);
             this.label102.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label102.Name = "label102";
             this.label102.Size = new System.Drawing.Size(429, 27);
@@ -6184,6 +6175,8 @@
             // 
             // tbDatiBeniServizi
             // 
+            this.tbDatiBeniServizi.Controls.Add(this.label101);
+            this.tbDatiBeniServizi.Controls.Add(this.btnInviaFattura);
             this.tbDatiBeniServizi.Controls.Add(this.groupBox30);
             this.tbDatiBeniServizi.Controls.Add(this.gb2_2_1);
             this.tbDatiBeniServizi.Controls.Add(this.label97);
@@ -6196,10 +6189,11 @@
             // 
             // groupBox30
             // 
+            this.groupBox30.Controls.Add(this.btnAggiungiRiepilogo);
             this.groupBox30.Controls.Add(this.groupBox57);
             this.groupBox30.Controls.Add(this.groupBox75);
             this.groupBox30.Controls.Add(this.groupBox76);
-            this.groupBox30.Location = new System.Drawing.Point(262, 315);
+            this.groupBox30.Location = new System.Drawing.Point(107, 305);
             this.groupBox30.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox30.Name = "groupBox30";
             this.groupBox30.Padding = new System.Windows.Forms.Padding(2);
@@ -6207,6 +6201,16 @@
             this.groupBox30.TabIndex = 11;
             this.groupBox30.TabStop = false;
             this.groupBox30.Text = "SCHEDA 2.2.2: DATI RIEPILOGO";
+            // 
+            // btnAggiungiRiepilogo
+            // 
+            this.btnAggiungiRiepilogo.Location = new System.Drawing.Point(410, 104);
+            this.btnAggiungiRiepilogo.Name = "btnAggiungiRiepilogo";
+            this.btnAggiungiRiepilogo.Size = new System.Drawing.Size(138, 44);
+            this.btnAggiungiRiepilogo.TabIndex = 22;
+            this.btnAggiungiRiepilogo.Text = "AGGIUNGI NUOVO DATI RIEPILOGO";
+            this.btnAggiungiRiepilogo.UseVisualStyleBackColor = true;
+            this.btnAggiungiRiepilogo.Click += new System.EventHandler(this.btnAggiungiRiepilogo_Click);
             // 
             // groupBox57
             // 
@@ -6244,7 +6248,7 @@
             // 
             this.groupBox75.Controls.Add(this.label119);
             this.groupBox75.Controls.Add(this.txtImposta);
-            this.groupBox75.Location = new System.Drawing.Point(183, 91);
+            this.groupBox75.Location = new System.Drawing.Point(32, 90);
             this.groupBox75.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox75.Name = "groupBox75";
             this.groupBox75.Padding = new System.Windows.Forms.Padding(2);
@@ -6306,12 +6310,13 @@
             // 
             // gb2_2_1
             // 
+            this.gb2_2_1.Controls.Add(this.btnAggiungiLinea);
             this.gb2_2_1.Controls.Add(this.groupBox48);
             this.gb2_2_1.Controls.Add(this.groupBox60);
             this.gb2_2_1.Controls.Add(this.groupBox47);
             this.gb2_2_1.Controls.Add(this.groupBox55);
             this.gb2_2_1.Controls.Add(this.groupBox56);
-            this.gb2_2_1.Location = new System.Drawing.Point(262, 76);
+            this.gb2_2_1.Location = new System.Drawing.Point(107, 66);
             this.gb2_2_1.Margin = new System.Windows.Forms.Padding(2);
             this.gb2_2_1.Name = "gb2_2_1";
             this.gb2_2_1.Padding = new System.Windows.Forms.Padding(2);
@@ -6320,11 +6325,21 @@
             this.gb2_2_1.TabStop = false;
             this.gb2_2_1.Text = "SCHEDA 2.2.1: DETTAGLIO LINEE";
             // 
+            // btnAggiungiLinea
+            // 
+            this.btnAggiungiLinea.Location = new System.Drawing.Point(410, 168);
+            this.btnAggiungiLinea.Name = "btnAggiungiLinea";
+            this.btnAggiungiLinea.Size = new System.Drawing.Size(138, 44);
+            this.btnAggiungiLinea.TabIndex = 21;
+            this.btnAggiungiLinea.Text = "AGGIUNGI NUOVO DETTAGLIO LINEA";
+            this.btnAggiungiLinea.UseVisualStyleBackColor = true;
+            this.btnAggiungiLinea.Click += new System.EventHandler(this.btnAggiungiLinea_Click);
+            // 
             // groupBox48
             // 
             this.groupBox48.Controls.Add(this.label94);
             this.groupBox48.Controls.Add(this.txtAliquotaIva);
-            this.groupBox48.Location = new System.Drawing.Point(183, 158);
+            this.groupBox48.Location = new System.Drawing.Point(32, 158);
             this.groupBox48.Margin = new System.Windows.Forms.Padding(2);
             this.groupBox48.Name = "groupBox48";
             this.groupBox48.Padding = new System.Windows.Forms.Padding(2);
@@ -6484,12 +6499,33 @@
             // 
             this.label97.AutoSize = true;
             this.label97.Font = new System.Drawing.Font("Comic Sans MS", 13.8F, System.Drawing.FontStyle.Bold);
-            this.label97.Location = new System.Drawing.Point(376, 36);
+            this.label97.Location = new System.Drawing.Point(221, 26);
             this.label97.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label97.Name = "label97";
             this.label97.Size = new System.Drawing.Size(471, 27);
             this.label97.TabIndex = 9;
             this.label97.Text = "SCHEDA PER INSERIRE I DATI BENI SERVIZI:";
+            // 
+            // btnInviaFattura
+            // 
+            this.btnInviaFattura.Location = new System.Drawing.Point(908, 210);
+            this.btnInviaFattura.Margin = new System.Windows.Forms.Padding(2);
+            this.btnInviaFattura.Name = "btnInviaFattura";
+            this.btnInviaFattura.Size = new System.Drawing.Size(202, 68);
+            this.btnInviaFattura.TabIndex = 13;
+            this.btnInviaFattura.Text = "INVIA FATTURA";
+            this.btnInviaFattura.UseVisualStyleBackColor = true;
+            this.btnInviaFattura.Click += new System.EventHandler(this.btnInviaFattura_Click);
+            // 
+            // label101
+            // 
+            this.label101.AutoSize = true;
+            this.label101.Font = new System.Drawing.Font("Comic Sans MS", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label101.Location = new System.Drawing.Point(801, 186);
+            this.label101.Name = "label101";
+            this.label101.Size = new System.Drawing.Size(439, 16);
+            this.label101.TabIndex = 14;
+            this.label101.Text = "SE HAI COMPLETATO TUTTI GLI INSERIMENTI, CREA LA TUA FATTURA!";
             // 
             // frmMain
             // 
@@ -6505,10 +6541,10 @@
             this.tbControlHeader.ResumeLayout(false);
             this.tbDatiTrasm.ResumeLayout(false);
             this.tbDatiTrasm.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
-            this.groupBox2.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gb1_1_6.ResumeLayout(false);
+            this.gb1_1_6.PerformLayout();
+            this.gb1_1_5.ResumeLayout(false);
+            this.gb1_1_5.PerformLayout();
             this.gb1_1_4.ResumeLayout(false);
             this.gb1_1_4.PerformLayout();
             this.gb1_1_3.ResumeLayout(false);
@@ -6522,14 +6558,14 @@
             this.gb1_2_2.ResumeLayout(false);
             this.groupBox16.ResumeLayout(false);
             this.groupBox16.PerformLayout();
-            this.groupBox15.ResumeLayout(false);
-            this.groupBox15.PerformLayout();
+            this.gb1_2_2_5.ResumeLayout(false);
+            this.gb1_2_2_5.PerformLayout();
             this.groupBox14.ResumeLayout(false);
             this.groupBox14.PerformLayout();
             this.groupBox13.ResumeLayout(false);
             this.groupBox13.PerformLayout();
-            this.groupBox12.ResumeLayout(false);
-            this.groupBox12.PerformLayout();
+            this.gb1_2_2_2.ResumeLayout(false);
+            this.gb1_2_2_2.PerformLayout();
             this.groupBox18.ResumeLayout(false);
             this.groupBox18.PerformLayout();
             this.gb1_2_1.ResumeLayout(false);
@@ -6537,24 +6573,24 @@
             this.groupBox10.PerformLayout();
             this.groupBox9.ResumeLayout(false);
             this.groupBox9.PerformLayout();
-            this.groupBox8.ResumeLayout(false);
-            this.groupBox8.PerformLayout();
-            this.groupBox7.ResumeLayout(false);
-            this.groupBox7.PerformLayout();
-            this.groupBox6.ResumeLayout(false);
-            this.groupBox6.PerformLayout();
+            this.gb1_2_1_6.ResumeLayout(false);
+            this.gb1_2_1_6.PerformLayout();
+            this.gb1_2_1_5.ResumeLayout(false);
+            this.gb1_2_1_5.PerformLayout();
+            this.gb1_2_1_4.ResumeLayout(false);
+            this.gb1_2_1_4.PerformLayout();
             this.groupBox4.ResumeLayout(false);
             this.groupBox4.PerformLayout();
-            this.groupBox3.ResumeLayout(false);
-            this.groupBox3.PerformLayout();
+            this.gb1_2_1_2.ResumeLayout(false);
+            this.gb1_2_1_2.PerformLayout();
             this.groupBox5.ResumeLayout(false);
             this.groupBox5.PerformLayout();
             this.tbCedentePrestatore2.ResumeLayout(false);
             this.tbCedentePrestatore2.PerformLayout();
-            this.groupBox17.ResumeLayout(false);
-            this.groupBox17.PerformLayout();
-            this.groupBox11.ResumeLayout(false);
-            this.groupBox11.PerformLayout();
+            this.gb1_2_6.ResumeLayout(false);
+            this.gb1_2_6.PerformLayout();
+            this.gb1_2_5.ResumeLayout(false);
+            this.gb1_2_5.PerformLayout();
             this.gb1_2_4.ResumeLayout(false);
             this.groupBox25.ResumeLayout(false);
             this.groupBox25.PerformLayout();
@@ -6593,23 +6629,23 @@
             this.gb1_4_2.ResumeLayout(false);
             this.groupBox31.ResumeLayout(false);
             this.groupBox31.PerformLayout();
-            this.groupBox32.ResumeLayout(false);
-            this.groupBox32.PerformLayout();
+            this.gb1_4_2_5.ResumeLayout(false);
+            this.gb1_4_2_5.PerformLayout();
             this.groupBox33.ResumeLayout(false);
             this.groupBox33.PerformLayout();
             this.groupBox34.ResumeLayout(false);
             this.groupBox34.PerformLayout();
-            this.groupBox35.ResumeLayout(false);
-            this.groupBox35.PerformLayout();
+            this.gb1_4_2_2.ResumeLayout(false);
+            this.gb1_4_2_2.PerformLayout();
             this.groupBox36.ResumeLayout(false);
             this.groupBox36.PerformLayout();
             this.gb1_4_1.ResumeLayout(false);
             this.groupBox39.ResumeLayout(false);
             this.groupBox39.PerformLayout();
-            this.groupBox41.ResumeLayout(false);
-            this.groupBox41.PerformLayout();
-            this.groupBox38.ResumeLayout(false);
-            this.groupBox38.PerformLayout();
+            this.gb1_4_1_2.ResumeLayout(false);
+            this.gb1_4_1_2.PerformLayout();
+            this.gb1_4_1_1.ResumeLayout(false);
+            this.gb1_4_1_1.PerformLayout();
             this.tbCessionarioCommittente2.ResumeLayout(false);
             this.tbCessionarioCommittente2.PerformLayout();
             this.gb1_4_4.ResumeLayout(false);
@@ -6692,10 +6728,10 @@
         private System.Windows.Forms.TabControl tbControlHeader;
         private System.Windows.Forms.TabPage tbDatiTrasm;
         private System.Windows.Forms.TabPage tbBody;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox gb1_1_6;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.TextBox txtPECDestinatario;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gb1_1_5;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Label label9;
@@ -6728,16 +6764,16 @@
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox txtDenominazione;
-        private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.GroupBox gb1_2_1_2;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.TextBox txtCFAnagrafica;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtCodice2;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.GroupBox groupBox6;
+        private System.Windows.Forms.GroupBox gb1_2_1_4;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.TextBox txtAlboProfessionale;
-        private System.Windows.Forms.GroupBox groupBox7;
+        private System.Windows.Forms.GroupBox gb1_2_1_5;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.TextBox txtProvinciaAlbo;
         private System.Windows.Forms.GroupBox gb1_2_2;
@@ -6748,12 +6784,12 @@
         private System.Windows.Forms.Label label25;
         private System.Windows.Forms.GroupBox groupBox9;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.GroupBox groupBox8;
+        private System.Windows.Forms.GroupBox gb1_2_1_6;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.TextBox txtNumIscrAlbo;
         private System.Windows.Forms.GroupBox groupBox16;
         private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.GroupBox groupBox15;
+        private System.Windows.Forms.GroupBox gb1_2_2_5;
         private System.Windows.Forms.Label label28;
         private System.Windows.Forms.TextBox txtProvincia;
         private System.Windows.Forms.GroupBox groupBox14;
@@ -6762,7 +6798,7 @@
         private System.Windows.Forms.GroupBox groupBox13;
         private System.Windows.Forms.Label label26;
         private System.Windows.Forms.TextBox txtCAP;
-        private System.Windows.Forms.GroupBox groupBox12;
+        private System.Windows.Forms.GroupBox gb1_2_2_2;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.TextBox txtNumeroCivico;
         private System.Windows.Forms.TabPage tbCedentePrestatore2;
@@ -6785,10 +6821,10 @@
         private System.Windows.Forms.Label label36;
         private System.Windows.Forms.TextBox txtIndirizzoOrg;
         private System.Windows.Forms.Label label50;
-        private System.Windows.Forms.GroupBox groupBox17;
+        private System.Windows.Forms.GroupBox gb1_2_6;
         private System.Windows.Forms.Label label45;
         private System.Windows.Forms.TextBox txtRiferimentoAmministrazione;
-        private System.Windows.Forms.GroupBox groupBox11;
+        private System.Windows.Forms.GroupBox gb1_2_5;
         private System.Windows.Forms.Label label44;
         private System.Windows.Forms.TextBox txtEmailPrestatore;
         private System.Windows.Forms.Label label37;
@@ -6813,7 +6849,7 @@
         private System.Windows.Forms.GroupBox gb1_4_2;
         private System.Windows.Forms.GroupBox groupBox31;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.GroupBox groupBox32;
+        private System.Windows.Forms.GroupBox gb1_4_2_5;
         private System.Windows.Forms.Label label46;
         private System.Windows.Forms.TextBox txtProvinciaCessionario;
         private System.Windows.Forms.GroupBox groupBox33;
@@ -6822,7 +6858,7 @@
         private System.Windows.Forms.GroupBox groupBox34;
         private System.Windows.Forms.Label label48;
         private System.Windows.Forms.TextBox txtCAPCessionario;
-        private System.Windows.Forms.GroupBox groupBox35;
+        private System.Windows.Forms.GroupBox gb1_4_2_2;
         private System.Windows.Forms.Label label49;
         private System.Windows.Forms.TextBox txtNumeroCivicoCessionario;
         private System.Windows.Forms.GroupBox groupBox36;
@@ -6840,10 +6876,10 @@
         private System.Windows.Forms.TextBox txtNomeCessionario;
         private System.Windows.Forms.Label label63;
         private System.Windows.Forms.TextBox txtDenominazioneCessionario;
-        private System.Windows.Forms.GroupBox groupBox41;
+        private System.Windows.Forms.GroupBox gb1_4_1_2;
         private System.Windows.Forms.Label label59;
         private System.Windows.Forms.TextBox txtCFCessionario;
-        private System.Windows.Forms.GroupBox groupBox38;
+        private System.Windows.Forms.GroupBox gb1_4_1_1;
         private System.Windows.Forms.Label label57;
         private System.Windows.Forms.TextBox txtIdCodiceCessionario;
         private System.Windows.Forms.Label label60;
@@ -6989,8 +7025,11 @@
         private System.Windows.Forms.ComboBox cmbSoggettoEmittente;
         private System.Windows.Forms.ComboBox cmbDivisa;
         private System.Windows.Forms.DateTimePicker dtpData;
-        private System.Windows.Forms.Button btnInviaFattura;
         private System.Windows.Forms.DateTimePicker dtAlbo;
+        private System.Windows.Forms.Button btnAggiungiLinea;
+        private System.Windows.Forms.Button btnAggiungiRiepilogo;
+        private System.Windows.Forms.Label label101;
+        private System.Windows.Forms.Button btnInviaFattura;
     }
 }
 
